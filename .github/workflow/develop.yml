@@ -1,0 +1,61 @@
+name: Deploy to Ubuntu
+
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
+
+      - name: Install Dependencies
+        run: npm install
+      
+      - name: Build
+        run: npm run build
+
+      - name: Archive build files
+        run: tar -czf project.tar.gz build
+
+      - name: SCP to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_PRIVATE_KEY }}
+          source: project.tar.gz
+          target: /home/likelion/hackerton/frontend-server/tobe
+
+      - name: SSH to server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_PRIVATE_KEY }}
+          script_stop: true
+          script: |
+            # 기존 current 폴더 삭제
+            rm -rf /home/likelion/hackerton/frontend-server/current
+            # 새로운 current 폴더 생성
+            mkdir -p /home/likelion/hackerton/frontend-server/current
+            # tobe 폴더에서 프로젝트 파일 이동
+            mv /home/likelion/hackerton/frontend-server/tobe/project.tar.gz /home/likelion/hackerton/frontend-server/current/project.tar.gz
+            cd /home/likelion/hackerton/frontend-server/current
+            # 프로젝트 파일 압축 해제
+            tar -xzf project.tar.gz
+            # 기존 프로세스 종료 (리액트 개발 서버 종료)
+            pkill -f 'workspace_react_test' || true
+            # 새로운 리액트 서버 시작
+            HOST=0.0.0.0 npm start
