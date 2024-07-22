@@ -1,0 +1,88 @@
+name: Deploy to Ubuntu
+
+on:
+  push:
+    branches: [ 'develop' ]
+  pull_request:
+    branches: [ 'develop' ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Create Nginx Config
+        run: |
+          echo "server {
+              listen 80;
+              server_name ${{secrets.LOCAL_HOST}};
+
+              location / {
+                  root /home/likelion/hackerton/frontend-server/current/build;
+                  index index.html index.htm;
+                  try_files \$uri \$uri/ /index.html;
+              }
+          }" > build/test-site
+
+      - name: Archive necessary files
+        run: tar -czf project.tar.gz package.json package-lock.json build
+
+      - name: SCP to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.LOCAL_HOST }}
+          username: ${{ secrets.LOCAL_USERNAME }}
+          key: ${{ secrets.LOCAL_PRIVATE_KEY }}
+          port: ${{ secrets.PORT }}
+          source: project.tar.gz
+          target: /home/likelion/hackerton/frontend-server/tobe
+
+      - name: SSH to server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.LOCAL_HOST }}
+          username: ${{ secrets.LOCAL_USERNAME }}
+          key: ${{ secrets.LOCAL_PRIVATE_KEY }}
+          port: ${{ secrets.PORT }}
+          script_stop: true
+          script: |
+            # 기존 current 폴더 삭제
+            rm -rf /home/likelion/hackerton/frontend-server/current
+            # 새로운 current 폴더 생성
+            mkdir -p /home/likelion/hackerton/frontend-server/current
+            # tobe 폴더에서 프로젝트 파일 이동
+            mv /home/likelion/hackerton/frontend-server/tobe/project.tar.gz /home/likelion/hackerton/frontend-server/current/project.tar.gz
+            cd /home/likelion/hackerton/frontend-server/current
+            # 프로젝트 파일 압축 해제
+            tar -xzf project.tar.gz
+            # 현재 디렉토리 확인
+            pwd
+            # 디렉토리 내 파일 목록 확인
+            ls -la
+            # 기존 프로세스 종료 (리액트 개발 서버 종료)
+            sudo systemctl stop nginx
+            # Nginx 설정 파일 업데이트 (예: build)
+            # 디렉토리 존재 시 삭제
+            sudo rm -rf /etc/nginx/sites-available/test-site
+            sudo cp /home/likelion/hackerton/frontend-server/current/build/test-site /etc/nginx/sites-available/test-site
+            sudo ln -sf /etc/nginx/sites-available/test-site /etc/nginx/sites-enabled/test-site
+            # Nginx 설정 테스트 및 재시작
+            sudo nginx -t
+            sudo systemctl restart nginx
