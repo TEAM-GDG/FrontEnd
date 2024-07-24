@@ -9,7 +9,9 @@
 body {
   font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
   min-width: 320px;
-  background-color: #FFFEF6;
+  background-image: url("../public/paperbg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 button {
