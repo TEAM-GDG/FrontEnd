@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 76px;
+  width: 100%;
+  z-index: 1000;
+  flex-shrink: 0;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.header__points {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 33%;
+}
+
+.header__points__img {
+  height: 50%;
+  width: 50%;
+}
+
+.header__points__text {
+  /* TODO */
+}
+
+.header__title {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 33%;
+}
+
+.header__title__text {
+  font-size: 2.188rem;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__empty {
+  flex: 1 1 auto;
+  height: 100%;
+  width: 33%;
+  visibility: hidden;
+}
+
+.header__horizontal {
+  height: 100%;
+  width: 99%;
+  box-shadow: 0 10px 10px 10px #bbb inset;
+}
