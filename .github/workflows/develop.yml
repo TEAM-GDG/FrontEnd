@@ -1,0 +1,67 @@
+name: Deploy to Ubuntu
+
+on:
+  push:
+    branches: [ 'develop' ]
+  pull_request:
+    branches: [ 'develop' ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Archive necessary files
+        run: tar -czf project.tar.gz package.json package-lock.json build
+
+      - name: SCP to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.LOCAL_HOST }}
+          username: ${{ secrets.LOCAL_USERNAME }}
+          key: ${{ secrets.LOCAL_PRIVATE_KEY }}
+          port: ${{ secrets.PORT }}
+          source: project.tar.gz
+          target: /home/likelion/hackerton/frontend-server/tobe
+
+      - name: SSH to server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.LOCAL_HOST }}
+          username: ${{ secrets.LOCAL_USERNAME }}
+          key: ${{ secrets.LOCAL_PRIVATE_KEY }}
+          port: ${{ secrets.PORT }}
+          script_stop: true
+          script: |
+            # 기존 current 폴더 삭제
+            sudo rm -rf /home/likelion/hackerton/frontend-server/current
+            # 새로운 current 폴더 생성
+            sudo mkdir -p /home/likelion/hackerton/frontend-server/current
+            # tobe 폴더에서 프로젝트 파일 이동
+            sudo mv /home/likelion/hackerton/frontend-server/tobe/project.tar.gz /home/likelion/hackerton/frontend-server/current/project.tar.gz
+            cd /home/likelion/hackerton/frontend-server/current
+            # 프로젝트 파일 압축 해제
+            sudo tar -xzf project.tar.gz
+            # 현재 디렉토리 확인
+            pwd
+            # 디렉토리 내 파일 목록 확인
+            ls -la
+            # Nginx 재시작 (설정 파일은 서버에서 수동으로 관리)
+            sudo systemctl restart nginx
