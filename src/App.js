@@ -7,7 +7,6 @@ import CalPage from './pages/CalPage';
 import StatPage from './pages/StatPage';
 import CommuPage from './pages/CommuPage';
 import RankPage from './pages/RankPage';
-import HorizonLine from './utils/HorizonLine';
 
 const Layout = () => {
   return (
