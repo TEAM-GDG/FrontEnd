@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 74px;
+  height: 76px;
   width: 100%;
   z-index: 1000;
   flex-shrink: 0;
@@ -14,15 +14,18 @@
 .header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-shrink: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .header__points {
   display: flex;
-  height: 78px;
-  width: 50px;
+  flex: 1 1 auto;
   align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 33%;
 }
 
 .header__points__img {
@@ -35,16 +38,27 @@
 }
 
 .header__title {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 33%;
+}
+
+.header__title__text {
   font-size: 2.188rem;
   color: #000;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 0 auto;
 }
 
 .header__empty {
-  /* TODO */
+  flex: 1 1 auto;
+  height: 100%;
+  width: 33%;
+  visibility: hidden;
 }
 
 .header__horizontal {

@@ -10,7 +10,7 @@ import RankPage from './pages/RankPage';
 
 const Layout = () => {
   return (
-    <div>
+    <div className="App">
       <Header />
       <Outlet />
       <Footer />

@@ -1,3 +1,7 @@
+.App {
+  width: 540px;
+  height: 960px;
+}
 .container {
   margin-top: 90px;
 }

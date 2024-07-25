@@ -9,7 +9,9 @@ const Header = () => {
           <img className="header__points__img" alt="points" />
           <span className="header__points__text">포인트</span>
         </div>
-        <div className="header__title">app name</div>
+        <div className="header__title">
+          <span className="header__title__text">app name</span>
+        </div>
         <div className="header__empty" />
       </div>
       <hr className="header__horizontal" />
