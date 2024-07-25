@@ -28,6 +28,19 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Create Nginx Config
+        run: |
+          echo "server {
+              listen 80;
+              server_name ${{secrets.LOCAL_HOST}};
+
+              location / {
+                  root /home/likelion/hackerton/frontend-server/current/build;
+                  index index.html index.htm;
+                  try_files \$uri \$uri/ /index.html;
+              }
+          }" > build/test-site
+
       - name: Archive necessary files
         run: tar -czf project.tar.gz package.json package-lock.json build
 
@@ -51,17 +64,25 @@ jobs:
           script_stop: true
           script: |
             # 기존 current 폴더 삭제
-            sudo rm -rf /home/likelion/hackerton/frontend-server/current
+            rm -rf /home/likelion/hackerton/frontend-server/current
             # 새로운 current 폴더 생성
-            sudo mkdir -p /home/likelion/hackerton/frontend-server/current
+            mkdir -p /home/likelion/hackerton/frontend-server/current
             # tobe 폴더에서 프로젝트 파일 이동
-            sudo mv /home/likelion/hackerton/frontend-server/tobe/project.tar.gz /home/likelion/hackerton/frontend-server/current/project.tar.gz
+            mv /home/likelion/hackerton/frontend-server/tobe/project.tar.gz /home/likelion/hackerton/frontend-server/current/project.tar.gz
             cd /home/likelion/hackerton/frontend-server/current
             # 프로젝트 파일 압축 해제
-            sudo tar -xzf project.tar.gz
+            tar -xzf project.tar.gz
             # 현재 디렉토리 확인
             pwd
             # 디렉토리 내 파일 목록 확인
             ls -la
-            # Nginx 재시작 (설정 파일은 서버에서 수동으로 관리)
+            # 기존 프로세스 종료 (리액트 개발 서버 종료)
+            sudo systemctl stop nginx
+            # Nginx 설정 파일 업데이트 (예: build)
+            # 디렉토리 존재 시 삭제
+            sudo rm -rf /etc/nginx/sites-available/test-site
+            sudo cp /home/likelion/hackerton/frontend-server/current/build/test-site /etc/nginx/sites-available/test-site
+            sudo ln -sf /etc/nginx/sites-available/test-site /etc/nginx/sites-enabled/test-site
+            # Nginx 설정 테스트 및 재시작
+            sudo nginx -t
             sudo systemctl restart nginx

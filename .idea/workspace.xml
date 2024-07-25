@@ -8,7 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="컴포넌트 이름 변경">
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/points.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/develop.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/develop.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +47,11 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1721905257" />
+                    <option name="lastUsedInstant" value="1721905601" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="55yong" />
-                    <option name="lastUsedInstant" value="1721730147" />
+                    <option name="lastUsedInstant" value="1721905443" />
                   </RecentBranch>
                 </list>
               </option>
@@ -149,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721825532362</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="아니뭐안쓰는컴포넌트있다고빌드오류를내냐개열받게하네">
+      <option name="closed" value="true" />
+      <created>1721905371622</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721905371622</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +175,7 @@
     <MESSAGE value="아 이제 진짜 끝" />
     <MESSAGE value="Header 작업 완료, Footer 작업 중" />
     <MESSAGE value="컴포넌트 이름 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="컴포넌트 이름 변경" />
+    <MESSAGE value="아니뭐안쓰는컴포넌트있다고빌드오류를내냐개열받게하네" />
+    <option name="LAST_COMMIT_MESSAGE" value="아니뭐안쓰는컴포넌트있다고빌드오류를내냐개열받게하네" />
   </component>
 </project>

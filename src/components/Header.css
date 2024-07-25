@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   position: fixed;
   top: 0;
@@ -7,14 +8,47 @@
   height: 74px;
   width: 100%;
   z-index: 1000;
-  justify-content: center;
   flex-shrink: 0;
 }
 
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.header__points {
+  display: flex;
+  height: 78px;
+  width: 50px;
+  align-items: center;
+}
+
+.header__points__img {
+  height: 50%;
+  width: 50%;
+}
+
+.header__points__text {
+  /* TODO */
+}
+
 .header__title {
-  font-size: 2.813rem;
+  font-size: 2.188rem;
   color: #000;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin: 0 auto;
+}
+
+.header__empty {
+  /* TODO */
+}
+
+.header__horizontal {
+  height: 100%;
+  width: 99%;
+  box-shadow: 0 10px 10px 10px #bbb inset;
 }
