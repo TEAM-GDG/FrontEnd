@@ -1,7 +1,8 @@
 import React from 'react';
+import '../../App.css';
 
 const NotFoundPage = () => {
-  return <div>NotFoundPage</div>;
+  return <div className="container">NotFoundPage</div>;
 };
 
 export default NotFoundPage;
