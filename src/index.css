@@ -18,6 +18,14 @@ body {
   /*background-image: url("../public/paperbg.jpeg");*/
   /*background-repeat: no-repeat;*/
   /*background-size: cover;*/
+  display: grid;
+  place-items: center;
+  max-width: 600px;
+  height: 960px;
+  width: 540px;
+  min-height: 100%;
+  margin: 0 auto;
+  overflow-y: scroll;
 }
 
 button {
