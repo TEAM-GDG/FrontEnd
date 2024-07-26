@@ -11,7 +11,7 @@ import NotFoundPage from './pages/NotFoundPage';
 
 const Layout = () => {
   return (
-    <div>
+    <div className="App">
       <Header />
       <Outlet />
       <Footer />
