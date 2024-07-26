@@ -1,7 +1,7 @@
 .App {
-  width: 540px;
-  height: 960px;
+  width: 600px;
 }
+
 .container {
   display: flex;
   font-size: 50px;

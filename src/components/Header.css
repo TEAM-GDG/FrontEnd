@@ -17,18 +17,21 @@
   display: flex;
   flex: 1 1 auto;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   height: 100%;
   width: 33%;
 }
 
 .header__points__img {
-  height: 50%;
-  width: 50%;
+  margin-left: 10%;
+  height: 30px;
+  width: 30px;
 }
 
 .header__points__text {
-  /* TODO */
+  font-size: 15px;
+  color: #E7DE86;
+
 }
 
 .header__title {

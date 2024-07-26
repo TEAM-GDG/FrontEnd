@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__points">
-        <img className="header__points__img" alt="points" />
+        <img className="header__points__img" src="points.png" alt="points" />
         <span className="header__points__text">포인트</span>
       </div>
       <div className="header__title">
