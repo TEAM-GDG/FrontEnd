@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 import { Outlet, Route, Routes } from 'react-router-dom';
 import MainPage from './pages/MainPage';
 import CalPage from './pages/CalPage';
@@ -8,6 +8,7 @@ import StatPage from './pages/StatPage';
 import CommuPage from './pages/CommuPage';
 import RankPage from './pages/RankPage';
 import NotFoundPage from './pages/NotFoundPage';
+import Footer from './components/Footer';
 
 const Layout = () => {
   return (
@@ -15,6 +16,7 @@ const Layout = () => {
       <Header />
       <Outlet />
       <Footer />
+      <Navbar />
     </div>
   );
 };

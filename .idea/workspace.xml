@@ -7,15 +7,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="또 메인 브랜치에서 하고있었음 ㅋㅅㅋ">
+    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="600px로 고정하고 테스트 위한 적절한 설정 완료">
+      <change afterPath="$PROJECT_DIR$/src/components/Navbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CalPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CalPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CommuPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CommuPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/RankPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RankPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/StatPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/StatPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -189,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721917658970</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="600px로 고정하고 테스트 위한 적절한 설정 완료">
+      <option name="closed" value="true" />
+      <created>1722005270961</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722005270961</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +216,7 @@
     <MESSAGE value="컴포넌트 이름 변경" />
     <MESSAGE value="아니뭐안쓰는컴포넌트있다고빌드오류를내냐개열받게하네" />
     <MESSAGE value="또 메인 브랜치에서 하고있었음 ㅋㅅㅋ" />
-    <option name="LAST_COMMIT_MESSAGE" value="또 메인 브랜치에서 하고있었음 ㅋㅅㅋ" />
+    <MESSAGE value="600px로 고정하고 테스트 위한 적절한 설정 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="600px로 고정하고 테스트 위한 적절한 설정 완료" />
   </component>
 </project>
