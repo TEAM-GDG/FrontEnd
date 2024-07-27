@@ -1,11 +1,8 @@
 import React from 'react';
 import '../../App.css';
 import styled from 'styled-components';
-import { useNavigate } from 'react-router-dom';
 
-const MainPage = () => {
-  const navigate = useNavigate();
-
+const MainPage = ({ handleChangePage }) => {
   return (
     <div className="container">
       <TopInfo>
@@ -20,7 +17,10 @@ const MainPage = () => {
             58%
           </CircleText>
         </Circle>
-        <EmotionText onClick={() => navigate('howdoyoufeel')}>
+        <EmotionText
+          href="howdoyoufeel"
+          onClick={e => handleChangePage(e, `howdoyoufeel`)}
+        >
           지금, 당신의 기분은 어떤가요? <br />
           <small>이곳을 클릭하여 기록해보세요.</small>
         </EmotionText>
@@ -111,7 +111,7 @@ const CircleText = styled.div`
   }
 `;
 
-const EmotionText = styled.div`
+const EmotionText = styled.a`
   width: 100%;
   margin-top: 10%;
   margin-bottom: 10%;

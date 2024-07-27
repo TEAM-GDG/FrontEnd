@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
-import { Outlet, Route, Routes } from 'react-router-dom';
+import { Outlet, Route, Routes, useNavigate } from 'react-router-dom';
 import MainPage from './pages/MainPage';
 import CalPage from './pages/CalPage';
 import StatPage from './pages/StatPage';
@@ -11,22 +11,33 @@ import NotFoundPage from './pages/NotFoundPage';
 import Footer from './components/Footer';
 import RecordPage from './pages/RecordPage';
 
-const Layout = () => {
+const Layout = ({ handleChangePage }) => {
   return (
     <div className="App">
       <Header />
       <Outlet />
       <Footer />
-      <Navbar />
+      <Navbar handleChangePage={handleChangePage} />
     </div>
   );
 };
 
-function App() {
+const App = () => {
+  const navigate = useNavigate();
+
+  const handleChangePage = (e, location) => {
+    e.preventDefault();
+    navigate(location);
+    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+  };
+
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<MainPage />} />
+      <Route path="/" element={<Layout handleChangePage={handleChangePage} />}>
+        <Route
+          index
+          element={<MainPage handleChangePage={handleChangePage} />}
+        />
         <Route path="howdoyoufeel" element={<RecordPage />} />
         <Route path="cal" element={<CalPage />} />
         <Route path="insight" element={<StatPage />} />
@@ -36,6 +47,6 @@ function App() {
       </Route>
     </Routes>
   );
-}
+};
 
 export default App;
