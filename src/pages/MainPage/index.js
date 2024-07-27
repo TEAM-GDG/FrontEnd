@@ -1,13 +1,16 @@
 import React from 'react';
 import '../../App.css';
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 const MainPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="container">
       <TopInfo>
         <Nickname>잠많은시금치</Nickname>
-        <RecordTime>감정 기록 8일째</RecordTime>
+        <RecordTime>감정 기록 n일째</RecordTime>
       </TopInfo>
       <EmotionContainer>
         <Circle>
@@ -17,7 +20,10 @@ const MainPage = () => {
             58%
           </CircleText>
         </Circle>
-        <EmotionText>지금, 당신의 기분은 어떤가요?</EmotionText>
+        <EmotionText onClick={() => navigate('howdoyoufeel')}>
+          지금, 당신의 기분은 어떤가요? <br />
+          <small>이곳을 클릭하여 기록해보세요.</small>
+        </EmotionText>
       </EmotionContainer>
     </div>
   );
