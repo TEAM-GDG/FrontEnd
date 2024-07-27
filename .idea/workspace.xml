@@ -7,13 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="감정 통계 페이지 작성">
-      <change afterPath="$PROJECT_DIR$/public/emotion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/RecordPage/index.js" afterDir="false" />
+    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="기록페이지 완성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/StatPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/StatPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +50,11 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="55yong" />
-                    <option name="lastUsedInstant" value="1722094658" />
+                    <option name="lastUsedInstant" value="1722097048" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1722094643" />
+                    <option name="lastUsedInstant" value="1722096630" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="develop" />
@@ -213,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722087922204</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="기록페이지 완성">
+      <option name="closed" value="true" />
+      <created>1722096433591</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722096433591</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +236,7 @@
     <MESSAGE value="600px로 고정하고 테스트 위한 적절한 설정 완료" />
     <MESSAGE value="미친 반응형 완료" />
     <MESSAGE value="감정 통계 페이지 작성" />
-    <option name="LAST_COMMIT_MESSAGE" value="감정 통계 페이지 작성" />
+    <MESSAGE value="기록페이지 완성" />
+    <option name="LAST_COMMIT_MESSAGE" value="기록페이지 완성" />
   </component>
 </project>
