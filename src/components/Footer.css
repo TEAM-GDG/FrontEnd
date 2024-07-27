@@ -11,8 +11,21 @@
   border-color: rgba(128, 128, 128, 0.37);
 }
 
+
 .footer__contacts{
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10%;
+
+}
+
+.footer > * {
+  margin-top: 3px
+}
+
+@media (max-width: 3px) {
+  .footer {
+    font-size: 11px;
+  }
 }

@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <navbar className="navbar">
+    <div className="navbar">
       <div className="navbar__box" onClick={() => handleClick(`cal`)}>
         <img className="navbar__box__button" src="cal.png" alt="캘린더" />
         <span className="navbar__box__text">캘린더</span>
@@ -36,7 +36,7 @@ const Navbar = () => {
         <img className="navbar__box__button" src="rank.png" alt="랭킹" />
         <span className="navbar__box__text">랭킹</span>
       </div>
-    </navbar>
+    </div>
   );
 };
 
