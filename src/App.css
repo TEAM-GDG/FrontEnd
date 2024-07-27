@@ -3,5 +3,8 @@
   height: 960px;
 }
 .container {
-  margin-top: 90px;
+  display: flex;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
 }

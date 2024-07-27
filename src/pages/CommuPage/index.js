@@ -1,7 +1,8 @@
 import React from 'react';
+import '../../App.css';
 
 const CommuPage = () => {
-  return <div>CommuPage</div>;
+  return <div className="container">CommuPage</div>;
 };
 
 export default CommuPage;

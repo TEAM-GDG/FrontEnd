@@ -1,7 +1,8 @@
 import React from 'react';
+import '../../App.css';
 
 const CalPage = () => {
-  return <div>CalPage</div>;
+  return <div className="container">CalPage</div>;
 };
 
 export default CalPage;
