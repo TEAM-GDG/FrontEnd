@@ -1,4 +1,5 @@
 .header {
+  font-family: NanumBarunpen;
   display: flex;
   align-items: center;
   position: sticky;
@@ -7,28 +8,34 @@
   height: 60px;
   margin: 0 auto;
   z-index: 100;
-  background-color: #fff;
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: rgba(128, 128, 128, 0.37);
+  background-image: url('../../public/paperbg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__points {
   display: flex;
   flex: 1 1 auto;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   height: 100%;
   width: 33%;
 }
 
 .header__points__img {
-  height: 50%;
-  width: 50%;
+  margin-left: 10%;
+  height: 30px;
+  width: 30px;
 }
 
 .header__points__text {
-  /* TODO */
+  font-family: "Nanum Pen Script";
+  font-size: 25px;
+  color: #afa12b;
+  font-weight: 100;
 }
 
 .header__title {
@@ -41,7 +48,7 @@
 }
 
 .header__title__text {
-  font-size: 20px;
+  font-size: 25px;
   color: #000;
   font-style: normal;
   font-weight: 400;
@@ -55,20 +62,41 @@
   visibility: hidden;
 }
 
-@media (max-width: 380px) {
+@media(max-width: 425px) {
+  .header__points__img {
+    height: 28px;
+    width: 28px;
+  }
+  .header__points__text {
+    font-size: 23px;
+  }
   .header__title__text {
-    font-size: 16px;
+    font-size: 23px;
   }
 }
 
-@media (max-width: 300px) {
+@media(max-width: 375px) {
+  .header__points__img {
+    height: 26px;
+    width: 26px;
+  }
+  .header__points__text {
+    font-size: 21px;
+  }
   .header__title__text {
-    font-size: 12px;
+    font-size: 21px;
   }
 }
 
-@media (max-width: 220px) {
+@media(max-width: 350px) {
+  .header__points__img {
+    height: 24px;
+    width: 24px;
+  }
+  .header__points__text {
+    font-size: 19px;
+  }
   .header__title__text {
-    font-size: 8px;
+    font-size: 19px;
   }
 }

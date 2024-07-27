@@ -1,3 +1,5 @@
+@import url('//fonts.googleapis.com/earlyaccess/nanumpenscript.css');
+
 @font-face {
   font-family: 'NanumBarunpen';
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
@@ -7,6 +9,19 @@
 
 body {
   max-width: 600px;
+  min-height: 100vh;
   margin: 0 auto;
   border: 1px solid rgba(128, 128, 128, 0.37);
+  background-color: #FFFEF6;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+  color: #000;
 }
