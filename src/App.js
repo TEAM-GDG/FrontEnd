@@ -9,6 +9,7 @@ import CommuPage from './pages/CommuPage';
 import RankPage from './pages/RankPage';
 import NotFoundPage from './pages/NotFoundPage';
 import Footer from './components/Footer';
+import RecordPage from './pages/RecordPage';
 
 const Layout = () => {
   return (
@@ -26,6 +27,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<MainPage />} />
+        <Route path="howdoyoufeel" element={<RecordPage />} />
         <Route path="cal" element={<CalPage />} />
         <Route path="insight" element={<StatPage />} />
         <Route path="community" element={<CommuPage />} />
