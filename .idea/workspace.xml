@@ -7,15 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="미친 반응형 완료">
-      <change afterPath="$PROJECT_DIR$/public/diary.png" afterDir="false" />
+    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="감정 통계 페이지 작성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/StatPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/StatPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +136,7 @@
       <workItem from="1721825855784" duration="1917000" />
       <workItem from="1721987736976" duration="11646000" />
       <workItem from="1722076457002" duration="5853000" />
-      <workItem from="1722084371532" duration="3010000" />
+      <workItem from="1722084371532" duration="3442000" />
     </task>
     <task id="LOCAL-00001" summary="협업 관련 설정">
       <option name="closed" value="true" />
@@ -207,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722023271943</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="감정 통계 페이지 작성">
+      <option name="closed" value="true" />
+      <created>1722087922204</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722087922204</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +226,7 @@
     <MESSAGE value="또 메인 브랜치에서 하고있었음 ㅋㅅㅋ" />
     <MESSAGE value="600px로 고정하고 테스트 위한 적절한 설정 완료" />
     <MESSAGE value="미친 반응형 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="미친 반응형 완료" />
+    <MESSAGE value="감정 통계 페이지 작성" />
+    <option name="LAST_COMMIT_MESSAGE" value="감정 통계 페이지 작성" />
   </component>
 </project>
