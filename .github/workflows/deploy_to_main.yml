@@ -37,6 +37,3 @@ jobs:
         run: |
           aws s3 rm --recursive s3://likelion-hackathon-web
           aws s3 cp --recursive build/ s3://likelion-hackathon-web/
-
-      - name: Cloudfront 캐시 무효화
-        run: aws cloudfront create-invalidation --distribution-id EF6HDNPD062 --paths "/*"
