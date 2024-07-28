@@ -1,7 +1,7 @@
 .App {
   width: 100%;
   height: 100%;
-  background-image: url('../public/paperbg.jpeg');
+  background-image: url('../public/paperbg.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -12,6 +12,67 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  /* Default */
+  min-height: 550px;
+
+  @media screen and (min-height: 668px) {
+    min-height: 580px;
+  }
+
+  /* Samsung Galaxy S8+ */
+  @media screen and (min-height: 740px) {
+    min-height: 620px;
+  }
+
+  /* iPhone 12 Pro */
+  @media screen and (min-height: 844px) {
+    min-height: 720px;
+  }
+
+  /* Galaxy Z Fold 5 */
+  @media screen and (min-height: 882px) {
+    min-height: 770px;
+  }
+
+  /* iPhone XR */
+  @media screen and (min-height: 896px) {
+    min-height: 780px;
+  }
+
+  /* Samsung Galaxy A51/ A71 / S20 Ultra */
+  @media screen and (min-height: 914px) {
+    min-height: 800px;
+  }
+
+  /* iPhone 14 Pro Max */
+  @media screen and (min-height: 932px) {
+    min-height: 810px;
+  }
+
+  /* iPad Mini */
+  @media screen and (min-height: 1024px) {
+    min-height: 900px;
+  }
+
+  /* iPad Air */
+  @media screen and (min-height: 1180px) {
+    min-height: 1060px;
+  }
+
+  /* Asus Zenbook Fold */
+  @media screen and (min-height: 1280px) {
+    min-height: 1160px;
+  }
+
+  /* iPad Pro, Surface Pro 7 */
+  @media screen and (min-height: 1366px) {
+    min-height: 1260px;
+  }
+
+  @media screen and (min-height: 1440px) {
+    min-height: 1360px;
+  }
 }
 
 .underline {

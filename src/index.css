@@ -9,19 +9,19 @@
 
 body {
   max-width: 600px;
-  min-height: 100vh;
   margin: 0 auto;
   border: 1px solid rgba(128, 128, 128, 0.37);
   background-color: #FFFEF6;
+  color: #4C4C4C;
 }
 
 a {
-  color: #000;
+  color: #4C4C4C;
   text-decoration: none;
   outline: none;
 }
 
 a:hover, a:active {
+  color: #4C4C4C;
   text-decoration: none;
-  color: #000;
 }
