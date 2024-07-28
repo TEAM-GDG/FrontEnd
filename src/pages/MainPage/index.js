@@ -10,13 +10,13 @@ const MainPage = ({ handleChangePage }) => {
         <RecordTime>감정 기록 n일째</RecordTime>
       </TopInfo>
       <EmotionContainer>
-        <Circle>
-          <CircleText>
+        <Heart>
+          <HeartInText>
             감정표현
             <br />
             58%
-          </CircleText>
-        </Circle>
+          </HeartInText>
+        </Heart>
         <EmotionText
           href="howdoyoufeel"
           onClick={e => handleChangePage(e, `howdoyoufeel`)}
@@ -73,41 +73,84 @@ const EmotionContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 6%;
+  margin-top: 12%;
   margin-bottom: 6%;
 `;
 
-const Circle = styled.div`
+const Heart = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 380px;
-  height: 380px;
-  border-radius: 50%;
-  background: rgba(210, 205, 194, 0.96);
-  box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: rgba(210, 205, 194, 1);
+  box-shadow: 5px 1px 4px 0 rgba(0, 0, 0, 0.25);
+  transform: rotate(45deg);
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: -50%;
+    border-radius: 50%;
+    background-color: rgba(210, 205, 194, 1);
+
+    @media (max-width: 425px) {
+      width: 100px;
+      height: 100px;
+    }
+
+    @media (max-width: 320px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: -50%;
+    border-radius: 50%;
+    background-color: rgba(210, 205, 194, 1);
+
+    @media (max-width: 425px) {
+      width: 100px;
+      height: 100px;
+    }
+
+    @media (max-width: 320px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
 
   @media (max-width: 425px) {
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
   }
 
   @media (max-width: 320px) {
-    width: 250px;
-    height: 250px;
+    width: 50px;
+    height: 50px;
   }
 `;
 
-const CircleText = styled.div`
-  font-size: 50px;
+const HeartInText = styled.div`
+  z-index: 5;
+  font-size: 45px;
   text-align: center;
+  transform: rotate(-45deg);
 
   @media (max-width: 425px) {
-    font-size: 45px;
+    font-size: 30px;
   }
 
   @media (max-width: 320px) {
-    font-size: 40px;
+    font-size: 25px;
   }
 `;
 
