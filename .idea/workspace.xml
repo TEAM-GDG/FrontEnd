@@ -7,37 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="하트로 바꿈">
-      <change afterPath="$PROJECT_DIR$/public/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/heart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/navIcon/inactive/cal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/navIcon/inactive/community.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/navIcon/inactive/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/navIcon/inactive/insight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/navIcon/inactive/rank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/LoginPage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/RegisterPage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="뭔가 했음 이것저것">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/cal.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/navIcon/active/cal.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/communi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/community.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/navIcon/active/community.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/navIcon/active/home.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/insight.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/navIcon/active/insight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/paperbg.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/rank.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/navIcon/active/rank.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CommuPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CommuPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/RecordPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecordPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +144,7 @@
       <workItem from="1721987736976" duration="11646000" />
       <workItem from="1722076457002" duration="5853000" />
       <workItem from="1722084371532" duration="3442000" />
-      <workItem from="1722169716083" duration="26858000" />
+      <workItem from="1722169716083" duration="27511000" />
     </task>
     <task id="LOCAL-00001" summary="협업 관련 설정">
       <option name="closed" value="true" />
@@ -292,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722180941326</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="뭔가 했음 이것저것">
+      <option name="closed" value="true" />
+      <created>1722264724419</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1722264724421</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +298,7 @@
     <MESSAGE value="리팩토링좀 하구요 ㅎ" />
     <MESSAGE value="반응형이 재밌다" />
     <MESSAGE value="하트로 바꿈" />
-    <option name="LAST_COMMIT_MESSAGE" value="하트로 바꿈" />
+    <MESSAGE value="뭔가 했음 이것저것" />
+    <option name="LAST_COMMIT_MESSAGE" value="뭔가 했음 이것저것" />
   </component>
 </project>
