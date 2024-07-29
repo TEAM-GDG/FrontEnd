@@ -68,7 +68,7 @@ const Navbar = ({ naviState, handleChangePage }) => {
           src="navIcon/inactive/cal.png"
           alt="캘린더"
         />
-        <span className="navbar__box__text">캘린더</span>
+        <span className="navbar__box__text">챌린지</span>
       </a>
       <a
         href="insight"

@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../App.css';
 import styled from 'styled-components';
+import EmotionModal from '../../components/EmotionModal';
 
 const RecordPage = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleClick = () => {
+    setModalOpen(true);
+  };
+
   return (
     <div className="container">
       <IconContainer>
@@ -18,6 +25,7 @@ const RecordPage = () => {
       <UserInputContainer>
         이곳을 클릭하여 오늘 있었던 일을 적어주세요.
       </UserInputContainer>
+      {modalOpen && <EmotionModal setModalOpen={setModalOpen} />}
     </div>
   );
 };

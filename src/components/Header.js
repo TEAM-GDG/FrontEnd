@@ -9,7 +9,7 @@ const Header = () => {
         <span className="header__points__text">1,385,968</span>
       </div>
       <div className="header__title">
-        <span className="header__title__text">기획디자인구함</span>
+        <span className="header__title__text">app name</span>
       </div>
       <div className="header__empty" />
     </header>
