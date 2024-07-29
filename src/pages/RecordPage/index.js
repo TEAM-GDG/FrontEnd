@@ -32,22 +32,22 @@ const IconContainer = styled.div`
 `;
 
 const Icon = styled.img`
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 
   @media (max-width: 425px) {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
   }
 
   @media (max-width: 375px) {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
   }
 
   @media (max-width: 320px) {
-    width: 85px;
-    height: 85px;
+    width: 60px;
+    height: 60px;
   }
 `;
 
