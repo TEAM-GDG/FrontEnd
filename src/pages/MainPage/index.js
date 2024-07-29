@@ -12,7 +12,7 @@ const MainPage = ({ handleChangePage }) => {
       <EmotionContainer>
         <Heart>
           <HeartInText>감정표현</HeartInText>
-          <HeartInText>100%</HeartInText>
+          <HeartInTextSmall>100%</HeartInTextSmall>
         </Heart>
         <EmotionText
           href="statusRegister"
@@ -80,38 +80,38 @@ const Heart = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
+  font-family: 'yg-jalnan';
+  font-size: 33px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #ffb0b8;
+  -webkit-text-stroke: 1px #fff;
   background-image: url('heart.png');
   background-size: cover;
 
   @media (max-width: 425px) {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+    font-size: 28px;
   }
 
   @media (max-width: 320px) {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    font-size: 24px;
   }
 `;
 
 const HeartInText = styled.span`
+  margin-bottom: -5.3%;
+`;
+
+const HeartInTextSmall = styled.span`
   z-index: 5;
-  font-size: 35px;
-  text-align: center;
-  margin-bottom: -8%;
-  font-family: 'yg-jalnan';
-  color: transparent;
-  -webkit-text-stroke: 1px #fff;
-
-  @media (max-width: 425px) {
-    font-size: 25px;
-  }
-
-  @media (max-width: 320px) {
-    font-size: 20px;
-  }
+  margin-top: -2%;
+  margin-bottom: 5%;
 `;
 
 const EmotionText = styled.a`

@@ -11,6 +11,8 @@ import RankPage from './pages/RankPage';
 import NotFoundPage from './pages/NotFoundPage';
 import Footer from './components/Footer';
 import RecordPage from './pages/RecordPage';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 
 const Layout = ({ naviState, handleChangePage }) => {
   return (
@@ -50,11 +52,21 @@ const App = React.memo(() => {
           index
           element={<MainPage handleChangePage={handleChangePage} />}
         />
-        <Route path="statusRecord" element={<RecordPage />} />
+
+        {/* 주요 기능 5종 */}
         <Route path="cal" element={<CalPage />} />
         <Route path="insight" element={<StatPage />} />
         <Route path="community" element={<CommuPage />} />
         <Route path="rank" element={<RankPage />} />
+
+        {/* 보조 기능 */}
+        <Route path="statusRecord" element={<RecordPage />} />
+
+        {/* 어디에나 다 있는 기능 */}
+        <Route path="membersLogin" element={<LoginPage />} />
+        <Route path="membersRegister" element={<RegisterPage />} />
+
+        {/* 404 Page */}
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
