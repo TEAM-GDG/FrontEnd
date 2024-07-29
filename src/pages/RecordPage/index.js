@@ -28,7 +28,7 @@ const IconContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5% 0 5% 0;
+  margin: 10% 0 5% 0;
 `;
 
 const Icon = styled.img`
@@ -96,9 +96,9 @@ const RecordDate = styled.span`
 const UserInputContainer = styled.div`
   display: flex;
   width: 95%;
-  height: 200px;
+  height: 250px;
   margin-top: 5%;
-  margin-bottom: 20%;
+  margin-bottom: 25%;
   font-size: 17px;
   color: #8c8b8b;
 

@@ -1,3 +1,4 @@
+import React, { useCallback, useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
@@ -11,34 +12,45 @@ import NotFoundPage from './pages/NotFoundPage';
 import Footer from './components/Footer';
 import RecordPage from './pages/RecordPage';
 
-const Layout = ({ handleChangePage }) => {
+const Layout = ({ naviState, handleChangePage }) => {
   return (
     <div className="App">
       <Header />
       <Outlet />
       <Footer />
-      <Navbar handleChangePage={handleChangePage} />
+      <Navbar naviState={naviState} handleChangePage={handleChangePage} />
     </div>
   );
 };
 
-const App = () => {
+const App = React.memo(() => {
   const navigate = useNavigate();
 
-  const handleChangePage = (e, location) => {
-    e.preventDefault();
-    navigate(location);
-    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
-  };
+  const [naviState, setNaviState] = useState('/');
+
+  const handleChangePage = useCallback(
+    (e, location) => {
+      e.preventDefault();
+      setNaviState(location);
+      navigate(location);
+      window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+    },
+    [navigate],
+  );
 
   return (
     <Routes>
-      <Route path="/" element={<Layout handleChangePage={handleChangePage} />}>
+      <Route
+        path="/"
+        element={
+          <Layout naviState={naviState} handleChangePage={handleChangePage} />
+        }
+      >
         <Route
           index
           element={<MainPage handleChangePage={handleChangePage} />}
         />
-        <Route path="howdoyoufeel" element={<RecordPage />} />
+        <Route path="statusRecord" element={<RecordPage />} />
         <Route path="cal" element={<CalPage />} />
         <Route path="insight" element={<StatPage />} />
         <Route path="community" element={<CommuPage />} />
@@ -47,6 +59,6 @@ const App = () => {
       </Route>
     </Routes>
   );
-};
+});
 
 export default App;

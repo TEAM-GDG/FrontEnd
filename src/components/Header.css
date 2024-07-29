@@ -11,9 +11,10 @@
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: rgba(128, 128, 128, 0.37);
-  background-image: url('../../public/paperbg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #f4f5ff;
+  /*background-image: url('../../public/paperbg.png');*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
 }
 
 .header__points {
@@ -33,7 +34,7 @@
 
 .header__points__text {
   font-family: "Nanum Pen Script";
-  font-size: 25px;
+  font-size: 23px;
   color: #afa12b;
   font-weight: 100;
 }
@@ -48,11 +49,12 @@
 }
 
 .header__title__text {
-  font-size: 25px;
+  font-size: 23px;
   color: #000;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header__empty {
@@ -68,27 +70,14 @@
     width: 28px;
   }
   .header__points__text {
-    font-size: 23px;
+    font-size: 21px;
   }
   .header__title__text {
-    font-size: 23px;
+    font-size: 21px;
   }
 }
 
 @media(max-width: 375px) {
-  .header__points__img {
-    height: 26px;
-    width: 26px;
-  }
-  .header__points__text {
-    font-size: 21px;
-  }
-  .header__title__text {
-    font-size: 21px;
-  }
-}
-
-@media(max-width: 350px) {
   .header__points__img {
     height: 24px;
     width: 24px;
@@ -98,5 +87,18 @@
   }
   .header__title__text {
     font-size: 19px;
+  }
+}
+
+@media(max-width: 350px) {
+  .header__points__img {
+    height: 22px;
+    width: 22px;
+  }
+  .header__points__text {
+    font-size: 17px;
+  }
+  .header__title__text {
+    font-size: 17px;
   }
 }
