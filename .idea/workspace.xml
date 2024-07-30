@@ -7,8 +7,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="안쓰는거있으면 빌드오류나는게 말이냐고">
-      <change beforePath="$PROJECT_DIR$/src/pages/RecordPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecordPage/index.js" afterDir="false" />
+    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="한페이지가될수있게">
+      <change afterPath="$PROJECT_DIR$/src/pages/membersPage/FindPwdPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/CalPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/CalPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/CommuPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/CommuPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/FindIdPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/FindIdPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/LoginPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/MainPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NotFoundPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/etcPage/NotFoundPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RankPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/RankPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RecordPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/subUtilPage/RecordPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RegisterPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/RegisterPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/StatPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/StatPage/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,8 +126,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/navIcon/inactive" />
-      <recent name="$PROJECT_DIR$/public/navIcon" />
+      <recent name="$PROJECT_DIR$/src/pages/etcPage" />
+      <recent name="$PROJECT_DIR$/src/pages/subUtilPage" />
+      <recent name="$PROJECT_DIR$/src/pages/members" />
+      <recent name="$PROJECT_DIR$/src/pages/mainUtility" />
+      <recent name="$PROJECT_DIR$/src/pages" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -147,7 +162,7 @@
       <workItem from="1722169716083" duration="37501000" />
       <workItem from="1722279936299" duration="2655000" />
       <workItem from="1722282764948" duration="1092000" />
-      <workItem from="1722283882884" duration="13263000" />
+      <workItem from="1722283882884" duration="22807000" />
     </task>
     <task id="LOCAL-00001" summary="협업 관련 설정">
       <option name="closed" value="true" />
@@ -325,7 +340,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722356698877</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="안쓰는거있으면 빌드오류나는게 말이냐고2">
+      <option name="closed" value="true" />
+      <created>1722356881614</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1722356881614</updated>
+    </task>
+    <task id="LOCAL-00024" summary="한페이지가될수있게">
+      <option name="closed" value="true" />
+      <created>1722361740707</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1722361740707</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,6 +387,8 @@
     <MESSAGE value="로그인을만들어보자" />
     <MESSAGE value="로그인 페이지 디자인 완료" />
     <MESSAGE value="안쓰는거있으면 빌드오류나는게 말이냐고" />
-    <option name="LAST_COMMIT_MESSAGE" value="안쓰는거있으면 빌드오류나는게 말이냐고" />
+    <MESSAGE value="안쓰는거있으면 빌드오류나는게 말이냐고2" />
+    <MESSAGE value="한페이지가될수있게" />
+    <option name="LAST_COMMIT_MESSAGE" value="한페이지가될수있게" />
   </component>
 </project>

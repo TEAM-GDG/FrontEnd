@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ handleChangePage }) => {
   return (
     <header className="header">
       <div className="header__points">
@@ -9,7 +9,13 @@ const Header = () => {
         <span className="header__points__text">1,385,968</span>
       </div>
       <div className="header__title">
-        <span className="header__title__text">app name</span>
+        <a
+          href="/"
+          className="header__title__text"
+          onClick={e => handleChangePage(e, `/`)}
+        >
+          app name
+        </a>
       </div>
       <div className="header__empty" />
     </header>

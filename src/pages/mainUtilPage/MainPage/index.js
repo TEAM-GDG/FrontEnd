@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css';
+import '../../../App.css';
 import styled from 'styled-components';
 
 const MainPage = ({ handleChangePage }) => {
@@ -8,6 +8,13 @@ const MainPage = ({ handleChangePage }) => {
       <TopInfo>
         <Nickname>잠많은시금치</Nickname>
         <RecordTime>감정 기록 n일째</RecordTime>
+        <a
+          style={{ marginLeft: `auto`, marginRight: `2%`, color: `red` }}
+          href="membersLogin"
+          onClick={e => handleChangePage(e, `membersLogin`)}
+        >
+          임시로그인버튼
+        </a>
       </TopInfo>
       <EmotionContainer>
         <Heart>

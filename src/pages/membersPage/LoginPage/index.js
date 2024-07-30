@@ -1,6 +1,58 @@
-import styled from 'styled-components';
+import React from 'react';
+import '../../../App.css';
+import { styled } from 'styled-components';
 
-export const LoginContainer = styled.div`
+const LoginPage = ({ handleChangePage }) => {
+  return (
+    <div className="container">
+      <LoginContainer>
+        <LoginTitle>GDG</LoginTitle>
+        <AuthForm>
+          <TextInput type="text" id="email" placeholder="이메일" />
+          <TextInput type="password" id="pwd" placeholder="비밀번호" />
+          <BoxInputContainer>
+            <BoxInput type="checkbox" id="autologin" />
+            <BoxInputLabel htmlFor="autologin">자동 로그인</BoxInputLabel>
+          </BoxInputContainer>
+          <SubmitButton type="submit">로그인</SubmitButton>
+        </AuthForm>
+        <UtilityContainer>
+          <UtilityButton
+            href="membersFindEmail"
+            onClick={e => handleChangePage(e, `membersFindEmail`)}
+          >
+            이메일찾기
+          </UtilityButton>
+          |
+          <UtilityButton
+            href="membersFindPassword"
+            onClick={e => handleChangePage(e, `membersFindPassword`)}
+          >
+            비밀번호찾기
+          </UtilityButton>
+          |<UtilityButton href="membersRegister">회원가입</UtilityButton>
+        </UtilityContainer>
+        <Horizon />
+        소셜 계정으로 로그인
+        <SNSLoginContainer>
+          <SNSLoginLinkBox href="네이버로 가요">
+            <SNSLoginLinkImage src="snsIcon/naverBtn.png" />
+          </SNSLoginLinkBox>
+          <SNSLoginLinkBox href="카카오로 가요">
+            <SNSLoginLinkImage src="snsIcon/kakaoBtn.png" />
+          </SNSLoginLinkBox>
+          <SNSLoginLinkBox href="구글로 가요">
+            <SNSLoginLinkImage src="snsIcon/googleBtn.png" />
+          </SNSLoginLinkBox>
+        </SNSLoginContainer>
+      </LoginContainer>
+    </div>
+  );
+};
+
+export default LoginPage;
+
+const LoginContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +60,7 @@ export const LoginContainer = styled.div`
   width: 90%;
   font-family: 'NanumSquare';
   font-size: 15px;
+  color: #bbbbbb;
 
   @media (max-width: 425px) {
     font-size: 14px;
@@ -20,7 +73,7 @@ export const LoginContainer = styled.div`
   }
 `;
 
-export const AuthForm = styled.form`
+const AuthForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +82,7 @@ export const AuthForm = styled.form`
   margin-top: 5%;
 `;
 
-export const LoginTitle = styled.span`
+const LoginTitle = styled.span`
   font-family: 'yg-Jalnan';
   font-size: 50px;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
@@ -48,7 +101,7 @@ export const LoginTitle = styled.span`
   }
 `;
 
-export const TextInput = styled.input`
+const TextInput = styled.input`
   width: 98%;
   height: 40px;
   margin: 2% 0 2% 0;
@@ -70,17 +123,17 @@ export const TextInput = styled.input`
   }
 `;
 
-export const BoxInputContainer = styled.div`
+const BoxInputContainer = styled.div`
   width: 100%;
   margin: 2% auto 2% 0;
   font-family: 'NanumSquare';
 `;
 
-export const BoxInput = styled.input`
+const BoxInput = styled.input`
   border-radius: 50%;
 `;
 
-export const BoxInputLabel = styled.label`
+const BoxInputLabel = styled.label`
   font-size: 15px;
 
   @media (max-width: 425px) {
@@ -94,7 +147,7 @@ export const BoxInputLabel = styled.label`
   }
 `;
 
-export const Button = styled.button`
+const SubmitButton = styled.button`
   width: 100%;
   height: 40px;
   margin: 2% 0 2% 0;
@@ -117,7 +170,7 @@ export const Button = styled.button`
   }
 `;
 
-export const UtilityContainer = styled.div`
+const UtilityContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -126,7 +179,7 @@ export const UtilityContainer = styled.div`
   font-family: 'NanumSquare';
 `;
 
-export const UtilityButton = styled.a`
+const UtilityButton = styled.a`
   margin: 0 2% 0 2%;
   font-size: 13px;
   font-family: 'NanumSquare';
@@ -143,13 +196,13 @@ export const UtilityButton = styled.a`
   }
 `;
 
-export const Horizon = styled.div`
+const Horizon = styled.div`
   width: 100%;
   border-bottom: 1px solid #bbbbbb;
   margin-bottom: 5%;
 `;
 
-export const SNSLoginContainer = styled.div`
+const SNSLoginContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,11 +210,11 @@ export const SNSLoginContainer = styled.div`
   margin: 2% 0 5% 0;
 `;
 
-export const SNSLoginLinkBox = styled.a`
+const SNSLoginLinkBox = styled.a`
   margin: 0 2% 0 2%;
 `;
 
-export const SNSLoginLinkImage = styled.img`
+const SNSLoginLinkImage = styled.img`
   width: 40px;
   height: 40px;
 `;
