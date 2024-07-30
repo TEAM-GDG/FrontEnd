@@ -8,7 +8,7 @@
 }
 
 .container {
-  font-family: NanumBarunpen;
+  font-family: 'NanumBarunpen', 'sans-serif';
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -78,4 +78,14 @@
 
 .underline {
   text-decoration: underline;
+}
+
+.horizon {
+  width: 100%;
+  border-bottom: 1px solid #bbbbbb;
+  margin-bottom: 5%;
+}
+
+.m-b-30 {
+  margin-bottom: 30%;
 }

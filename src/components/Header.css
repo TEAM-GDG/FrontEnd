@@ -1,5 +1,5 @@
 .header {
-  font-family: NanumBarunpen;
+  font-family: "NanumBarunpen", "sans-serif";
   display: flex;
   align-items: center;
   position: sticky;
@@ -33,7 +33,7 @@
 }
 
 .header__points__text {
-  font-family: "Nanum Pen Script";
+  font-family: "Nanum Pen Script", "sans-serif";
   font-size: 23px;
   color: #afa12b;
   font-weight: 100;

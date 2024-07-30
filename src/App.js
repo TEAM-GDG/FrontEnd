@@ -69,8 +69,14 @@ const App = React.memo(() => {
           element={<LoginPage handleChangePage={handleChangePage} />}
         />
         <Route path="membersRegister" element={<RegisterPage />} />
-        <Route path="membersFindEmail" element={<FindIdPage />} />
-        <Route path="membersFindPassword" element={<FindPwdPage />} />
+        <Route
+          path="membersFindEmail"
+          element={<FindIdPage handleChangePage={handleChangePage} />}
+        />
+        <Route
+          path="membersFindPassword"
+          element={<FindPwdPage handleChangePage={handleChangePage} />}
+        />
 
         {/* 404 Page */}
         <Route path="*" element={<NotFoundPage />} />

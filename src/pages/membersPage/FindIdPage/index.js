@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import '../../../App.css';
+import '../Members.css';
+
 import styled from 'styled-components';
 
-const FindIdPage = () => {
+const FindIdPage = ({ handleChangePage }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = e => {
@@ -12,25 +14,50 @@ const FindIdPage = () => {
 
   return (
     <div className="container">
-      <FindIdContainer>
-        <FindIdTitle>아이디 찾기</FindIdTitle>
-        <Horizon />
-        <AuthForm>
-          <TextAndButtonContainer>
-            <TextInput type="tel" id="email" placeholder="휴대폰 번호" />
-            <Button type="button" onClick={e => handleClick(e)}>
+      <div className="membersContainer">
+        <span className="findTitle">이메일 찾기</span>
+        <div className="horizon" />
+        <form className="membersForm">
+          <div className="findAuthContainer">
+            <input
+              className="membersTextInput"
+              type="tel"
+              id="email"
+              placeholder="휴대폰 번호"
+            />
+            <button
+              className="findAuthButton"
+              type="button"
+              onClick={e => handleClick(e)}
+            >
               전송
-            </Button>
-          </TextAndButtonContainer>
-          {isClicked && (
-            <TextAndButtonContainer>
-              <TextInput type="text" id="email" placeholder="인증번호 입력" />
-              <Button type="button">확인</Button>
-            </TextAndButtonContainer>
-          )}
-          <SubmitButton type="submit">아이디 찾기</SubmitButton>
-        </AuthForm>
-      </FindIdContainer>
+            </button>
+          </div>
+          <div className="findAuthContainer">
+            <input
+              className="membersTextInput"
+              type="text"
+              id="email"
+              placeholder="인증번호 입력"
+            />
+            <button className="findAuthButton" type="button">
+              확인
+            </button>
+          </div>
+          <button className="membersSubmitButton" type="submit">
+            이메일 찾기
+          </button>
+        </form>
+        <div className="membersUtilityContainer">
+          <a
+            className="membersUtilityButton"
+            href="membersLogin"
+            onClick={e => handleChangePage(e, `membersLogin`)}
+          >
+            돌아가기
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
@@ -119,7 +146,7 @@ const TextInput = styled.input`
 
 const Button = styled.button`
   width: 40%;
-  height: 40px;
+  height: 43px;
   margin: 2% 0 2% 2%;
   border-radius: 2px;
   border-style: none;
@@ -149,5 +176,31 @@ const SubmitButton = styled.button`
   }
   @media (max-width: 320px) {
     font-size: 12px;
+  }
+`;
+
+const UtilityContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5% 0 5% 0;
+  color: #bbbbbb;
+  font-family: 'NanumSquare';
+`;
+
+const UtilityButton = styled.a`
+  margin: 0 2% 0 2%;
+  font-size: 13px;
+  font-family: 'NanumSquare';
+  color: #bbbbbb;
+
+  @media (max-width: 425px) {
+    font-size: 12px;
+  }
+  @media (max-width: 375px) {
+    font-size: 11px;
+  }
+  @media (max-width: 320px) {
+    font-size: 10px;
   }
 `;

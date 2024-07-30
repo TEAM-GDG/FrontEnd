@@ -7,20 +7,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="한페이지가될수있게">
-      <change afterPath="$PROJECT_DIR$/src/pages/membersPage/FindPwdPage/index.js" afterDir="false" />
+    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="로그인 회원가입 아이디 비번찾기 만들었음 ㅋㅋ">
+      <change afterPath="$PROJECT_DIR$/src/pages/membersPage/Members.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CalPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/CalPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CommuPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/CommuPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/FindIdPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/FindIdPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/LoginPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/MainPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NotFoundPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/etcPage/NotFoundPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/RankPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/RankPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/RecordPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/subUtilPage/RecordPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/RegisterPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/RegisterPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/StatPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/StatPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/membersPage/FindIdPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/FindIdPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/membersPage/FindPwdPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/FindPwdPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/membersPage/LoginPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/LoginPage/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -162,7 +158,7 @@
       <workItem from="1722169716083" duration="37501000" />
       <workItem from="1722279936299" duration="2655000" />
       <workItem from="1722282764948" duration="1092000" />
-      <workItem from="1722283882884" duration="22807000" />
+      <workItem from="1722283882884" duration="29719000" />
     </task>
     <task id="LOCAL-00001" summary="협업 관련 설정">
       <option name="closed" value="true" />
@@ -356,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722361740707</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="로그인 회원가입 아이디 비번찾기 만들었음 ㅋㅋ">
+      <option name="closed" value="true" />
+      <created>1722367309749</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1722367309749</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,7 +368,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="응애 테스트" />
     <MESSAGE value="협업 관련 설정" />
     <MESSAGE value="아 이제 진짜 끝" />
     <MESSAGE value="Header 작업 완료, Footer 작업 중" />
@@ -389,6 +392,7 @@
     <MESSAGE value="안쓰는거있으면 빌드오류나는게 말이냐고" />
     <MESSAGE value="안쓰는거있으면 빌드오류나는게 말이냐고2" />
     <MESSAGE value="한페이지가될수있게" />
-    <option name="LAST_COMMIT_MESSAGE" value="한페이지가될수있게" />
+    <MESSAGE value="로그인 회원가입 아이디 비번찾기 만들었음 ㅋㅋ" />
+    <option name="LAST_COMMIT_MESSAGE" value="로그인 회원가입 아이디 비번찾기 만들었음 ㅋㅋ" />
   </component>
 </project>
