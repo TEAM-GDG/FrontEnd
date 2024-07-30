@@ -7,9 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="로그인 페이지 디자인 완료">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="안쓰는거있으면 빌드오류나는게 말이냐고">
+      <change beforePath="$PROJECT_DIR$/src/pages/RecordPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecordPage/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +147,7 @@
       <workItem from="1722169716083" duration="37501000" />
       <workItem from="1722279936299" duration="2655000" />
       <workItem from="1722282764948" duration="1092000" />
-      <workItem from="1722283882884" duration="13054000" />
+      <workItem from="1722283882884" duration="13263000" />
     </task>
     <task id="LOCAL-00001" summary="협업 관련 설정">
       <option name="closed" value="true" />
@@ -318,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722356498667</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="안쓰는거있으면 빌드오류나는게 말이냐고">
+      <option name="closed" value="true" />
+      <created>1722356698877</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1722356698877</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,6 +355,7 @@
     <MESSAGE value="작은변경 움!!" />
     <MESSAGE value="로그인을만들어보자" />
     <MESSAGE value="로그인 페이지 디자인 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="로그인 페이지 디자인 완료" />
+    <MESSAGE value="안쓰는거있으면 빌드오류나는게 말이냐고" />
+    <option name="LAST_COMMIT_MESSAGE" value="안쓰는거있으면 빌드오류나는게 말이냐고" />
   </component>
 </project>
