@@ -1,17 +1,34 @@
-import React from 'react';
-import '../../App.css';
+import React, { useState } from 'react';
+import '../../../App.css';
 import styled from 'styled-components';
 
 const FindIdPage = () => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = e => {
+    e.preventDefault();
+    setIsClicked(true);
+  };
+
   return (
     <div className="container">
       <FindIdContainer>
         <FindIdTitle>아이디 찾기</FindIdTitle>
         <Horizon />
         <AuthForm>
-          <TextInput type="text" id="email" placeholder="이메일" />
-          <TextInput type="password" id="pwd" placeholder="비밀번호" />
-          <Button type="submit">로그인</Button>
+          <TextAndButtonContainer>
+            <TextInput type="tel" id="email" placeholder="휴대폰 번호" />
+            <Button type="button" onClick={e => handleClick(e)}>
+              전송
+            </Button>
+          </TextAndButtonContainer>
+          {isClicked && (
+            <TextAndButtonContainer>
+              <TextInput type="text" id="email" placeholder="인증번호 입력" />
+              <Button type="button">확인</Button>
+            </TextAndButtonContainer>
+          )}
+          <SubmitButton type="submit">아이디 찾기</SubmitButton>
         </AuthForm>
       </FindIdContainer>
     </div>
@@ -26,9 +43,8 @@ const FindIdContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 90%;
-  font-family: 'NanumSquare';
   font-size: 15px;
-  color: #bbbbbb;
+  margin-bottom: 50%;
 
   @media (max-width: 425px) {
     font-size: 14px;
@@ -51,21 +67,18 @@ const AuthForm = styled.form`
 `;
 
 const FindIdTitle = styled.span`
-  font-family: 'yg-Jalnan';
-  font-size: 50px;
-  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  color: #f4f5ff;
-  -webkit-text-stroke: 3px #678464;
+  font-size: 23px;
+  margin-top: 8%;
+  margin-bottom: 10%;
 
   @media (max-width: 425px) {
-    font-size: 45px;
+    font-size: 22px;
   }
   @media (max-width: 375px) {
-    font-size: 40px;
+    font-size: 21px;
   }
   @media (max-width: 320px) {
-    font-size: 35px;
+    font-size: 20px;
   }
 `;
 
@@ -73,6 +86,13 @@ const Horizon = styled.div`
   width: 100%;
   border-bottom: 1px solid #bbbbbb;
   margin-bottom: 5%;
+`;
+
+const TextAndButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 `;
 
 const TextInput = styled.input`
@@ -98,9 +118,21 @@ const TextInput = styled.input`
 `;
 
 const Button = styled.button`
+  width: 40%;
+  height: 40px;
+  margin: 2% 0 2% 2%;
+  border-radius: 2px;
+  border-style: none;
+  background-color: #fff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'NanumSquare';
+  color: #bbbbbb;
+`;
+
+const SubmitButton = styled.button`
   width: 100%;
   height: 40px;
-  margin: 2% 0 2% 0;
+  margin: 11% 0 2% 0;
   border-radius: 2px;
   border-style: none;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);

@@ -3,17 +3,18 @@ import './App.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import { Outlet, Route, Routes, useNavigate } from 'react-router-dom';
-import MainPage from './pages/MainPage';
-import CalPage from './pages/CalPage';
-import StatPage from './pages/StatPage';
-import CommuPage from './pages/CommuPage';
-import RankPage from './pages/RankPage';
-import NotFoundPage from './pages/NotFoundPage';
+import MainPage from './pages/mainUtilPage/MainPage';
+import CalPage from './pages/mainUtilPage/CalPage';
+import StatPage from './pages/mainUtilPage/StatPage';
+import CommuPage from './pages/mainUtilPage/CommuPage';
+import RankPage from './pages/mainUtilPage/RankPage';
+import NotFoundPage from './pages/etcPage/NotFoundPage';
 import Footer from './components/Footer';
-import RecordPage from './pages/RecordPage';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
-import FindIdPage from './pages/FindIdPage';
+import RecordPage from './pages/subUtilPage/RecordPage';
+import LoginPage from './pages/membersPage/LoginPage';
+import RegisterPage from './pages/membersPage/RegisterPage';
+import FindIdPage from './pages/membersPage/FindIdPage';
+import FindPwdPage from './pages/membersPage/FindPwdPage';
 
 const Layout = ({ naviState, handleChangePage }) => {
   return (
@@ -63,9 +64,13 @@ const App = React.memo(() => {
         <Route path="statusRecord" element={<RecordPage />} />
 
         {/* 회원 정보 관련 기능 */}
-        <Route path="membersLogin" element={<LoginPage />} />
+        <Route
+          path="membersLogin"
+          element={<LoginPage handleChangePage={handleChangePage} />}
+        />
         <Route path="membersRegister" element={<RegisterPage />} />
         <Route path="membersFindEmail" element={<FindIdPage />} />
+        <Route path="membersFindPassword" element={<FindPwdPage />} />
 
         {/* 404 Page */}
         <Route path="*" element={<NotFoundPage />} />

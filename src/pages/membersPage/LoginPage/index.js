@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../App.css';
+import '../../../App.css';
 import { styled } from 'styled-components';
 
-const LoginPage = () => {
+const LoginPage = ({ handleChangePage }) => {
   return (
     <div className="container">
       <LoginContainer>
@@ -14,15 +14,26 @@ const LoginPage = () => {
             <BoxInput type="checkbox" id="autologin" />
             <BoxInputLabel htmlFor="autologin">자동 로그인</BoxInputLabel>
           </BoxInputContainer>
-          <Button type="submit">로그인</Button>
+          <SubmitButton type="submit">로그인</SubmitButton>
         </AuthForm>
         <UtilityContainer>
-          <UtilityButton href="membersFindEmail">이메일찾기</UtilityButton>|
-          <UtilityButton href="membersFindPassword">비밀번호찾기</UtilityButton>
+          <UtilityButton
+            href="membersFindEmail"
+            onClick={e => handleChangePage(e, `membersFindEmail`)}
+          >
+            이메일찾기
+          </UtilityButton>
+          |
+          <UtilityButton
+            href="membersFindPassword"
+            onClick={e => handleChangePage(e, `membersFindPassword`)}
+          >
+            비밀번호찾기
+          </UtilityButton>
           |<UtilityButton href="membersRegister">회원가입</UtilityButton>
         </UtilityContainer>
         <Horizon />
-        SNS 간편 로그인
+        소셜 계정으로 로그인
         <SNSLoginContainer>
           <SNSLoginLinkBox href="네이버로 가요">
             <SNSLoginLinkImage src="snsIcon/naverBtn.png" />
@@ -136,7 +147,7 @@ const BoxInputLabel = styled.label`
   }
 `;
 
-const Button = styled.button`
+const SubmitButton = styled.button`
   width: 100%;
   height: 40px;
   margin: 2% 0 2% 0;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../../App.css';
-import EmotionModal from '../../components/EmotionModal';
+import '../../../App.css';
+import EmotionModal from '../../../components/EmotionModal';
 import styled from 'styled-components';
 
 const RecordPage = () => {
