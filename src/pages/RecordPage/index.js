@@ -15,9 +15,9 @@ import {
 const RecordPage = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
-  const handleClick = () => {
-    setModalOpen(true);
-  };
+  // const handleClick = () => {
+  //   setModalOpen(true);
+  // };
 
   return (
     <div className="container">
