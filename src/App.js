@@ -48,12 +48,11 @@ const App = React.memo(() => {
           <Layout naviState={naviState} handleChangePage={handleChangePage} />
         }
       >
+        {/* 주요 기능 5종 */}
         <Route
           index
           element={<MainPage handleChangePage={handleChangePage} />}
         />
-
-        {/* 주요 기능 5종 */}
         <Route path="cal" element={<CalPage />} />
         <Route path="insight" element={<StatPage />} />
         <Route path="community" element={<CommuPage />} />

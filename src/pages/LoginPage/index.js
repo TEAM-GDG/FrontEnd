@@ -1,6 +1,21 @@
 import React from 'react';
 import '../../App.css';
-import styled from 'styled-components';
+import {
+  LoginContainer,
+  LoginTitle,
+  AuthForm,
+  TextInput,
+  BoxInputContainer,
+  BoxInput,
+  BoxInputLabel,
+  Button,
+  UtilityContainer,
+  UtilityButton,
+  Horizon,
+  SNSLoginContainer,
+  SNSLoginLinkBox,
+  SNSLoginLinkImage,
+} from './styled';
 
 const LoginPage = () => {
   return (
@@ -8,50 +23,35 @@ const LoginPage = () => {
       <LoginContainer>
         <LoginTitle>GDG</LoginTitle>
         <AuthForm>
-          <Input type="text" id="email" placeholder="아이디" />
-          <Input type="password" id="pwd" placeholder="비밀번호" />
+          <TextInput type="text" id="email" placeholder="이메일" />
+          <TextInput type="password" id="pwd" placeholder="비밀번호" />
+          <BoxInputContainer>
+            <BoxInput type="checkbox" id="autologin" />
+            <BoxInputLabel htmlFor="autologin">자동 로그인</BoxInputLabel>
+          </BoxInputContainer>
+          <Button type="submit">로그인</Button>
         </AuthForm>
+        <UtilityContainer>
+          <UtilityButton>아이디찾기</UtilityButton> |
+          <UtilityButton>비밀번호찾기</UtilityButton> |
+          <UtilityButton>회원가입</UtilityButton>
+        </UtilityContainer>
+        <Horizon />
+        SNS 간편 로그인
+        <SNSLoginContainer>
+          <SNSLoginLinkBox href="네이버로 가요">
+            <SNSLoginLinkImage src="snsIcon/naverBtn.png" />
+          </SNSLoginLinkBox>
+          <SNSLoginLinkBox href="카카오로 가요">
+            <SNSLoginLinkImage src="snsIcon/kakaoBtn.png" />
+          </SNSLoginLinkBox>
+          <SNSLoginLinkBox href="구글로 가요">
+            <SNSLoginLinkImage src="snsIcon/googleBtn.png" />
+          </SNSLoginLinkBox>
+        </SNSLoginContainer>
       </LoginContainer>
     </div>
   );
 };
 
 export default LoginPage;
-
-const LoginContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-`;
-
-const AuthForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 30%;
-`;
-
-const LoginTitle = styled.span`
-  font-family: 'yg-Jalnan';
-  font-size: 50px;
-  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  color: #f4f5ff;
-  -webkit-text-stroke: 3px #678464;
-`;
-
-const Input = styled.input`
-  width: 88%;
-  height: 50px;
-  margin: 2% 0 2% 0;
-  padding-left: 2%;
-  border-radius: 5px;
-  border-style: none;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'NanumBarunpen';
-  font-size: 15px;
-`;
