@@ -1,6 +1,26 @@
+import React from 'react';
+import '../../App.css';
 import styled from 'styled-components';
 
-export const LoginContainer = styled.div`
+const FindIdPage = () => {
+  return (
+    <div className="container">
+      <FindIdContainer>
+        <FindIdTitle>아이디 찾기</FindIdTitle>
+        <Horizon />
+        <AuthForm>
+          <TextInput type="text" id="email" placeholder="이메일" />
+          <TextInput type="password" id="pwd" placeholder="비밀번호" />
+          <Button type="submit">로그인</Button>
+        </AuthForm>
+      </FindIdContainer>
+    </div>
+  );
+};
+
+export default FindIdPage;
+
+const FindIdContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +28,7 @@ export const LoginContainer = styled.div`
   width: 90%;
   font-family: 'NanumSquare';
   font-size: 15px;
+  color: #bbbbbb;
 
   @media (max-width: 425px) {
     font-size: 14px;
@@ -20,7 +41,7 @@ export const LoginContainer = styled.div`
   }
 `;
 
-export const AuthForm = styled.form`
+const AuthForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +50,7 @@ export const AuthForm = styled.form`
   margin-top: 5%;
 `;
 
-export const LoginTitle = styled.span`
+const FindIdTitle = styled.span`
   font-family: 'yg-Jalnan';
   font-size: 50px;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
@@ -48,7 +69,13 @@ export const LoginTitle = styled.span`
   }
 `;
 
-export const TextInput = styled.input`
+const Horizon = styled.div`
+  width: 100%;
+  border-bottom: 1px solid #bbbbbb;
+  margin-bottom: 5%;
+`;
+
+const TextInput = styled.input`
   width: 98%;
   height: 40px;
   margin: 2% 0 2% 0;
@@ -70,31 +97,7 @@ export const TextInput = styled.input`
   }
 `;
 
-export const BoxInputContainer = styled.div`
-  width: 100%;
-  margin: 2% auto 2% 0;
-  font-family: 'NanumSquare';
-`;
-
-export const BoxInput = styled.input`
-  border-radius: 50%;
-`;
-
-export const BoxInputLabel = styled.label`
-  font-size: 15px;
-
-  @media (max-width: 425px) {
-    font-size: 14px;
-  }
-  @media (max-width: 375px) {
-    font-size: 13px;
-  }
-  @media (max-width: 320px) {
-    font-size: 12px;
-  }
-`;
-
-export const Button = styled.button`
+const Button = styled.button`
   width: 100%;
   height: 40px;
   margin: 2% 0 2% 0;
@@ -115,53 +118,4 @@ export const Button = styled.button`
   @media (max-width: 320px) {
     font-size: 12px;
   }
-`;
-
-export const UtilityContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 5% 0 5% 0;
-  color: #bbbbbb;
-  font-family: 'NanumSquare';
-`;
-
-export const UtilityButton = styled.a`
-  margin: 0 2% 0 2%;
-  font-size: 13px;
-  font-family: 'NanumSquare';
-  color: #bbbbbb;
-
-  @media (max-width: 425px) {
-    font-size: 12px;
-  }
-  @media (max-width: 375px) {
-    font-size: 11px;
-  }
-  @media (max-width: 320px) {
-    font-size: 10px;
-  }
-`;
-
-export const Horizon = styled.div`
-  width: 100%;
-  border-bottom: 1px solid #bbbbbb;
-  margin-bottom: 5%;
-`;
-
-export const SNSLoginContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin: 2% 0 5% 0;
-`;
-
-export const SNSLoginLinkBox = styled.a`
-  margin: 0 2% 0 2%;
-`;
-
-export const SNSLoginLinkImage = styled.img`
-  width: 40px;
-  height: 40px;
 `;

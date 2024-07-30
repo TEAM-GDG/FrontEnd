@@ -13,11 +13,12 @@ import Footer from './components/Footer';
 import RecordPage from './pages/RecordPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import FindIdPage from './pages/FindIdPage';
 
 const Layout = ({ naviState, handleChangePage }) => {
   return (
     <div className="App">
-      <Header />
+      <Header handleChangePage={handleChangePage} />
       <Outlet />
       <Footer />
       <Navbar naviState={naviState} handleChangePage={handleChangePage} />
@@ -61,9 +62,10 @@ const App = React.memo(() => {
         {/* 보조 기능 */}
         <Route path="statusRecord" element={<RecordPage />} />
 
-        {/* 어디에나 다 있는 기능 */}
+        {/* 회원 정보 관련 기능 */}
         <Route path="membersLogin" element={<LoginPage />} />
         <Route path="membersRegister" element={<RegisterPage />} />
+        <Route path="membersFindEmail" element={<FindIdPage />} />
 
         {/* 404 Page */}
         <Route path="*" element={<NotFoundPage />} />

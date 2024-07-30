@@ -1,21 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import {
-  LoginContainer,
-  LoginTitle,
-  AuthForm,
-  TextInput,
-  BoxInputContainer,
-  BoxInput,
-  BoxInputLabel,
-  Button,
-  UtilityContainer,
-  UtilityButton,
-  Horizon,
-  SNSLoginContainer,
-  SNSLoginLinkBox,
-  SNSLoginLinkImage,
-} from './styled';
+import { styled } from 'styled-components';
 
 const LoginPage = () => {
   return (
@@ -32,9 +17,9 @@ const LoginPage = () => {
           <Button type="submit">로그인</Button>
         </AuthForm>
         <UtilityContainer>
-          <UtilityButton>아이디찾기</UtilityButton> |
-          <UtilityButton>비밀번호찾기</UtilityButton> |
-          <UtilityButton>회원가입</UtilityButton>
+          <UtilityButton href="membersFindEmail">이메일찾기</UtilityButton>|
+          <UtilityButton href="membersFindPassword">비밀번호찾기</UtilityButton>
+          |<UtilityButton href="membersRegister">회원가입</UtilityButton>
         </UtilityContainer>
         <Horizon />
         SNS 간편 로그인
@@ -55,3 +40,170 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+
+const LoginContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  font-family: 'NanumSquare';
+  font-size: 15px;
+  color: #bbbbbb;
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+  @media (max-width: 375px) {
+    font-size: 13px;
+  }
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+`;
+
+const AuthForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5%;
+`;
+
+const LoginTitle = styled.span`
+  font-family: 'yg-Jalnan';
+  font-size: 50px;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  color: #f4f5ff;
+  -webkit-text-stroke: 3px #678464;
+
+  @media (max-width: 425px) {
+    font-size: 45px;
+  }
+  @media (max-width: 375px) {
+    font-size: 40px;
+  }
+  @media (max-width: 320px) {
+    font-size: 35px;
+  }
+`;
+
+const TextInput = styled.input`
+  width: 98%;
+  height: 40px;
+  margin: 2% 0 2% 0;
+  padding-left: 2%;
+  border-radius: 2px;
+  border-style: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'NanumSquare';
+  font-size: 15px;
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+  @media (max-width: 375px) {
+    font-size: 13px;
+  }
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+`;
+
+const BoxInputContainer = styled.div`
+  width: 100%;
+  margin: 2% auto 2% 0;
+  font-family: 'NanumSquare';
+`;
+
+const BoxInput = styled.input`
+  border-radius: 50%;
+`;
+
+const BoxInputLabel = styled.label`
+  font-size: 15px;
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+  @media (max-width: 375px) {
+    font-size: 13px;
+  }
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+`;
+
+const Button = styled.button`
+  width: 100%;
+  height: 40px;
+  margin: 2% 0 2% 0;
+  border-radius: 2px;
+  border-style: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: #adc3a5;
+  font-family: 'NanumSquare';
+  font-size: 15px;
+  color: #fff;
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+  @media (max-width: 375px) {
+    font-size: 13px;
+  }
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+`;
+
+const UtilityContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5% 0 5% 0;
+  color: #bbbbbb;
+  font-family: 'NanumSquare';
+`;
+
+const UtilityButton = styled.a`
+  margin: 0 2% 0 2%;
+  font-size: 13px;
+  font-family: 'NanumSquare';
+  color: #bbbbbb;
+
+  @media (max-width: 425px) {
+    font-size: 12px;
+  }
+  @media (max-width: 375px) {
+    font-size: 11px;
+  }
+  @media (max-width: 320px) {
+    font-size: 10px;
+  }
+`;
+
+const Horizon = styled.div`
+  width: 100%;
+  border-bottom: 1px solid #bbbbbb;
+  margin-bottom: 5%;
+`;
+
+const SNSLoginContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 2% 0 5% 0;
+`;
+
+const SNSLoginLinkBox = styled.a`
+  margin: 0 2% 0 2%;
+`;
+
+const SNSLoginLinkImage = styled.img`
+  width: 40px;
+  height: 40px;
+`;
