@@ -12,7 +12,7 @@ const Footer = () => {
         이용약관
       </a>
       <span>FE : 오용준 홍가영</span>
-      <span>BE : 김도훈 한상희 노기봉</span>
+      <span>BE : 김도훈 한상희 노기봉 정희수</span>
       <div className="footer__contacts">
         <a href="https://www.instagram.com/likelion_ync/">
           <svg

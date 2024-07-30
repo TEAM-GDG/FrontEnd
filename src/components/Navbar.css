@@ -6,7 +6,7 @@
     bottom: 0;
     padding-bottom: calc(env(safe-area-inset-bottom) + 0px);
     box-sizing: border-box;
-    z-index: 550;
+    z-index: 1000;
     max-width: 600px;
     margin: 0 auto;
     align-items: center;
@@ -40,7 +40,6 @@
     .navbar__box__text {
         font-size: 10px;
     }
-
 }
 
 @media (max-width: 440px) {

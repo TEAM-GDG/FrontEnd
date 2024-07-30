@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../App.css';
-import styled from 'styled-components';
+import EmotionModal from '../../components/EmotionModal';
+import {
+  Icon,
+  IconContainer,
+  RecordContainer,
+  RecordCount,
+  RecordDate,
+  RecordDetail,
+  RecordTitle,
+  UserInputContainer,
+} from './styled';
 
 const RecordPage = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleClick = () => {
+    setModalOpen(true);
+  };
+
   return (
     <div className="container">
       <IconContainer>
@@ -18,95 +34,9 @@ const RecordPage = () => {
       <UserInputContainer>
         이곳을 클릭하여 오늘 있었던 일을 적어주세요.
       </UserInputContainer>
+      {modalOpen && <EmotionModal setModalOpen={setModalOpen} />}
     </div>
   );
 };
 
 export default RecordPage;
-
-const IconContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5% 0 5% 0;
-`;
-
-const Icon = styled.img`
-  width: 150px;
-  height: 150px;
-
-  @media (max-width: 425px) {
-    width: 120px;
-    height: 120px;
-  }
-
-  @media (max-width: 375px) {
-    width: 100px;
-    height: 100px;
-  }
-
-  @media (max-width: 320px) {
-    width: 85px;
-    height: 85px;
-  }
-`;
-
-const RecordContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  margin-top: 5%;
-`;
-
-const RecordTitle = styled.span`
-  font-size: 25px;
-
-  @media (max-width: 425px) {
-    font-size: 21px;
-  }
-
-  @media (max-width: 320px) {
-    font-size: 18px;
-  }
-`;
-
-const RecordDetail = styled.div`
-  display: flex;
-  margin-top: 2%;
-  font-size: 17px;
-
-  @media (max-width: 425px) {
-    font-size: 15px;
-  }
-
-  @media (max-width: 320px) {
-    font-size: 13px;
-  }
-`;
-
-const RecordCount = styled.span`
-  color: #959595;
-`;
-
-const RecordDate = styled.span`
-  color: #aaaaaa;
-  margin-left: 2%;
-`;
-
-const UserInputContainer = styled.div`
-  display: flex;
-  width: 95%;
-  height: 200px;
-  margin-top: 5%;
-  margin-bottom: 20%;
-  font-size: 17px;
-  color: #8c8b8b;
-
-  @media (max-width: 425px) {
-    font-size: 15px;
-  }
-
-  @media (max-width: 320px) {
-    font-size: 13px;
-  }
-`;

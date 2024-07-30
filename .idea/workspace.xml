@@ -7,9 +7,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="반응형이 재밌다">
+    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="로그인을만들어보자">
+      <change afterPath="$PROJECT_DIR$/public/snsIcon/googleBtn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/snsIcon/kakaoBtn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/snsIcon/naverBtn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/LoginPage/styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/RecordPage/styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/StatPage/styled.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoginPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RecordPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecordPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/StatPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/StatPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/HorizonLine.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,27 +99,36 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "55yong",
-    "last_opened_file_path": "/Users/55yong/Documents/likelion/likelion-competition/hackerton/gdg-front/public",
+    "last_opened_file_path": "/Users/55yong/Documents/likelion/likelion-competition/hackerton/gdg-front/public/snsIcon",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "/Users/55yong/.nvm/versions/node/v20.12.1/bin/node",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/55yong/Documents/likelion/likelion-competition/hackerton/gdg-front/node_modules/prettier",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
     "ts.external.directory.path": "/Users/55yong/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/snsIcon" />
       <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/navIcon/inactive" />
+      <recent name="$PROJECT_DIR$/public/navIcon" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -136,7 +157,10 @@
       <workItem from="1721987736976" duration="11646000" />
       <workItem from="1722076457002" duration="5853000" />
       <workItem from="1722084371532" duration="3442000" />
-      <workItem from="1722169716083" duration="10458000" />
+      <workItem from="1722169716083" duration="37501000" />
+      <workItem from="1722279936299" duration="2655000" />
+      <workItem from="1722282764948" duration="1092000" />
+      <workItem from="1722283882884" duration="12600000" />
     </task>
     <task id="LOCAL-00001" summary="협업 관련 설정">
       <option name="closed" value="true" />
@@ -250,13 +274,62 @@
       <option name="project" value="LOCAL" />
       <updated>1722178763897</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="하트로 바꿈">
+      <option name="closed" value="true" />
+      <created>1722180941325</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722180941326</updated>
+    </task>
+    <task id="LOCAL-00016" summary="뭔가 했음 이것저것">
+      <option name="closed" value="true" />
+      <created>1722264724419</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1722264724421</updated>
+    </task>
+    <task id="LOCAL-00017" summary="리듀서 기본 설정">
+      <option name="closed" value="true" />
+      <created>1722265596439</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1722265596440</updated>
+    </task>
+    <task id="LOCAL-00018" summary="아이콘 크기 수정">
+      <option name="closed" value="true" />
+      <created>1722266067780</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1722266067781</updated>
+    </task>
+    <task id="LOCAL-00019" summary="작은변경 움!!">
+      <option name="closed" value="true" />
+      <created>1722269278994</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1722269278996</updated>
+    </task>
+    <task id="LOCAL-00020" summary="로그인을만들어보자">
+      <option name="closed" value="true" />
+      <created>1722282460008</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1722282460008</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="응애 테스트" />
     <MESSAGE value="협업 관련 설정" />
     <MESSAGE value="아 이제 진짜 끝" />
@@ -272,6 +345,12 @@
     <MESSAGE value="미친 리드미 추가" />
     <MESSAGE value="리팩토링좀 하구요 ㅎ" />
     <MESSAGE value="반응형이 재밌다" />
-    <option name="LAST_COMMIT_MESSAGE" value="반응형이 재밌다" />
+    <MESSAGE value="하트로 바꿈" />
+    <MESSAGE value="뭔가 했음 이것저것" />
+    <MESSAGE value="리듀서 기본 설정" />
+    <MESSAGE value="아이콘 크기 수정" />
+    <MESSAGE value="작은변경 움!!" />
+    <MESSAGE value="로그인을만들어보자" />
+    <option name="LAST_COMMIT_MESSAGE" value="로그인을만들어보자" />
   </component>
 </project>
