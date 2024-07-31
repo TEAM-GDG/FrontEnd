@@ -19,5 +19,56 @@
 .communityAlignSelect {
   background-color: inherit;
   border: none;
-  /*font-family: ;*/
+  font-family: 'KoPub돋움', 'sans-serif';
+}
+
+.communityPostContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  background-color: #E2E5E2;
+  margin: 2% 0 2% 0;
+  padding: 0 2px 0 2px;
+  border-radius: 5px;
+  font-family: 'KoPub돋움', 'sans-serif';
+  color: #4c4c4c;
+}
+
+.communityPostInfoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.communityPostInfoTitle {
+  margin: 3% 0 3% 3%;
+}
+
+.communityPostInfoImage {
+  margin: 3% 3% 3% 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.communityPostInfoDetail {
+  margin-left: 3%;
+  color: #828282;
+  font-size: 13px;
+}
+
+.communityPostInfoCount {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 3%;
+  color: #828282;
+  font-size: 13px;
+}
+
+.communityPostInfoCountImage {
+  width: 15px;
+  height: 15px;
 }

@@ -26,6 +26,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'KoPub돋움';
+  src: url('../public/fonts/KoPubDotum/KoPubDotum.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   color: #4C4C4C;
 }
