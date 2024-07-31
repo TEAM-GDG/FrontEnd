@@ -1,0 +1,23 @@
+.communityContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+}
+
+.communityImage {
+  width: 100px;
+  height: 100px;
+}
+
+.communityAlignContainer {
+  display: flex;
+  margin: 0 auto 0 2px;
+}
+
+.communityAlignSelect {
+  background-color: inherit;
+  border: none;
+  /*font-family: ;*/
+}

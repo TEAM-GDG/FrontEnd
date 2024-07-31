@@ -19,20 +19,20 @@ const FindPwdPage = ({ handleChangePage }) => {
           <input
             className="membersTextInput"
             type="text"
-            id="email"
+            id="name"
             placeholder="이름"
           />
           <input
             className="membersTextInput"
             type="text"
-            id="pwd"
-            placeholder="아이디"
+            id="email"
+            placeholder="이메일"
           />
           <div className="findAuthContainer">
             <input
               className="membersTextInput"
               type="tel"
-              id="email"
+              id="phone"
               placeholder="휴대폰 번호"
             />
             <button
@@ -47,7 +47,7 @@ const FindPwdPage = ({ handleChangePage }) => {
             <input
               className="membersTextInput"
               type="text"
-              id="email"
+              id="verification_code"
               placeholder="인증번호 입력"
             />
             <button className="findAuthButton" type="button">

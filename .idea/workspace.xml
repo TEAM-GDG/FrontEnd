@@ -7,16 +7,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="로그인 회원가입 아이디 비번찾기 만들었음 ㅋㅋ">
-      <change afterPath="$PROJECT_DIR$/src/pages/membersPage/Members.css" afterDir="false" />
+    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="무서운 폰트">
+      <change afterPath="$PROJECT_DIR$/public/fonts/NanumBarunpen/NanumBarunpenB.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/NanumBarunpen/NanumBarunpenR.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/NanumPen/NanumPen.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/NanumSquare/NanumSquare.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/koPubDotum/KoPubWorld Dotum_Pro Bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/koPubDotum/KoPubWorld Dotum_Pro Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/koPubDotum/KoPubWorld Dotum_Pro Medium.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ygJalnan/Jalnan.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/CommunityPage/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/membersPage/ChangePwdPage/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/paperbg.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mainUtilPage/CommuPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/CommunityPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mainUtilPage/MainPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/MainPage/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/membersPage/FindIdPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/FindIdPage/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/membersPage/FindPwdPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/FindPwdPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/membersPage/LoginPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/LoginPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/membersPage/Members.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/Members.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +111,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "55yong",
-    "last_opened_file_path": "/Users/55yong/Documents/likelion/likelion-competition/hackerton/gdg-front/public/snsIcon",
+    "last_opened_file_path": "/Users/55yong/Documents/likelion/likelion-competition/hackerton/gdg-front/public/fonts/ygJalnan",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -118,8 +132,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/snsIcon" />
-      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public/fonts/ygJalnan" />
+      <recent name="$PROJECT_DIR$/public/fonts/NanumSquare" />
+      <recent name="$PROJECT_DIR$/public/fonts/NanumPen" />
+      <recent name="$PROJECT_DIR$/public/fonts/NanumBarunpen" />
+      <recent name="$PROJECT_DIR$/public/fonts/koPubDotum" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages/etcPage" />
@@ -158,7 +175,8 @@
       <workItem from="1722169716083" duration="37501000" />
       <workItem from="1722279936299" duration="2655000" />
       <workItem from="1722282764948" duration="1092000" />
-      <workItem from="1722283882884" duration="29719000" />
+      <workItem from="1722283882884" duration="29997000" />
+      <workItem from="1722424878900" duration="7543000" />
     </task>
     <task id="LOCAL-00001" summary="협업 관련 설정">
       <option name="closed" value="true" />
@@ -360,7 +378,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722367309749</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="무서운 CSS">
+      <option name="closed" value="true" />
+      <created>1722374132944</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1722374132944</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,8 +394,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="협업 관련 설정" />
-    <MESSAGE value="아 이제 진짜 끝" />
     <MESSAGE value="Header 작업 완료, Footer 작업 중" />
     <MESSAGE value="컴포넌트 이름 변경" />
     <MESSAGE value="아니뭐안쓰는컴포넌트있다고빌드오류를내냐개열받게하네" />
@@ -393,6 +417,8 @@
     <MESSAGE value="안쓰는거있으면 빌드오류나는게 말이냐고2" />
     <MESSAGE value="한페이지가될수있게" />
     <MESSAGE value="로그인 회원가입 아이디 비번찾기 만들었음 ㅋㅋ" />
-    <option name="LAST_COMMIT_MESSAGE" value="로그인 회원가입 아이디 비번찾기 만들었음 ㅋㅋ" />
+    <MESSAGE value="무서운 CSS" />
+    <MESSAGE value="무서운 폰트" />
+    <option name="LAST_COMMIT_MESSAGE" value="무서운 폰트" />
   </component>
 </project>

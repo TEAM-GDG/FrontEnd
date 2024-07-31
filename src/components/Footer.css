@@ -9,7 +9,7 @@
   border-width: 1px 0  0;
   border-style: solid;
   border-color: rgba(128, 128, 128, 0.37);
-  font-family: "NanumSquare", "sans-serif";
+  font-family: '나눔스퀘어', 'sans-serif';
 
   @media (max-width: 425px) {
     font-size: 11px;

@@ -7,7 +7,7 @@
   align-items: center;
   width: 90%;
   margin-bottom: 30%;
-  font-family: 'NanumSquare', 'sans-serif';
+  font-family: '나눔스퀘어', 'sans-serif';
   font-size: 15px;
   color: #bbbbbb;
 
@@ -39,7 +39,7 @@
   border-radius: 2px;
   border-style: none;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'NanumSquare', 'sans-serif';
+  font-family: '나눔스퀘어', 'sans-serif';
   font-size: 15px;
 
   @media (max-width: 425px) {
@@ -61,7 +61,7 @@
   border-style: none;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   background-color: #adc3a5;
-  font-family: 'NanumSquare', 'sans-serif';
+  font-family: '나눔스퀘어', 'sans-serif';
   font-size: 15px;
   color: #fff;
 
@@ -82,13 +82,13 @@
   justify-content: center;
   margin: 5% 0 5% 0;
   color: #bbbbbb;
-  font-family: 'NanumSquare', 'sans-serif';
+  font-family: '나눔스퀘어', 'sans-serif';
 }
 
 .membersUtilityButton {
   margin: 0 2% 0 2%;
   font-size: 13px;
-  font-family: 'NanumSquare', 'sans-serif';
+  font-family: '나눔스퀘어', 'sans-serif';
   color: #bbbbbb;
 
   @media (max-width: 425px) {
@@ -105,7 +105,7 @@
 /* 로그인 컴포넌트 CSS */
 .loginTitle {
   margin-top: 15%;
-  font-family: 'yg-Jalnan', 'sans-serif';
+  font-family: '여기어때잘난체', 'sans-serif';
   font-size: 50px;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
@@ -126,7 +126,7 @@
 .loginBoxInputContainer {
   width: 100%;
   margin: 2% auto 2% 0;
-  font-family: 'NanumSquare', 'sans-serif';
+  font-family: '나눔스퀘어', 'sans-serif';
 }
 
 .loginBoxInput {
@@ -134,7 +134,7 @@
 }
 
 .loginBoxInputLabel {
-  font-family: 'NanumSquare', 'sans-serif';
+  font-family: '나눔스퀘어', 'sans-serif';
   font-size: 15px;
 
   @media (max-width: 425px) {
@@ -168,7 +168,7 @@
 /* 이메일, 비밀번호 찾기 컴포넌트 CSS */
 .findTitle {
   font-size: 23px;
-  font-family: 'NanumSquare', 'sans-serif';
+  font-family: '나눔스퀘어', 'sans-serif';
   margin-top: 15%;
   margin-bottom: 10%;
 
@@ -198,7 +198,7 @@
   border-style: none;
   background-color: #fff;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'NanumSquare', 'sans-serif';
+  font-family: '나눔스퀘어', 'sans-serif';
   color: #bbbbbb;
   font-size: 15px;
 

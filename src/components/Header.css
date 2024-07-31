@@ -1,5 +1,5 @@
 .header {
-  font-family: "NanumBarunpen", "sans-serif";
+  font-family: "나눔바른펜", "sans-serif";
   display: flex;
   align-items: center;
   position: sticky;
@@ -11,10 +11,7 @@
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: rgba(128, 128, 128, 0.37);
-  background: #f4f5ff;
-  /*background-image: url('../../public/paperbg.png');*/
-  /*background-repeat: no-repeat;*/
-  /*background-size: cover;*/
+  background: #F2F2F2;
 }
 
 .header__points {
