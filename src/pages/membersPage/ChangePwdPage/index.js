@@ -39,7 +39,7 @@ const ChangePwdPage = ({ handleChangePage }) => {
         <div className="membersUtilityContainer">
           <a
             className="membersUtilityButton"
-            href="#"
+            href="어디로감"
             onClick={e => handleChangePage(e, `어디로감?`)}
           >
             돌아가기
