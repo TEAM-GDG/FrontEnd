@@ -19,7 +19,7 @@ const MainPage = ({ handleChangePage }) => {
       <EmotionContainer>
         <Heart>
           <HeartInText>감정표현</HeartInText>
-          <HeartInTextSmall>100%</HeartInTextSmall>
+          <HeartInTextPercent>100%</HeartInTextPercent>
         </Heart>
         <EmotionText
           href="statusRegister"
@@ -89,13 +89,13 @@ const Heart = styled.div`
   position: relative;
   width: 300px;
   height: 300px;
-  font-family: 'yg-jalnan';
+  font-family: '여기어때잘난체', 'sans-serif';
   font-size: 33px;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   text-align: center;
   color: #ffb0b8;
   -webkit-text-stroke: 1px #fff;
-  background-image: url('heart.png');
+  background-image: url('../../../../public/heart.png');
   background-size: cover;
 
   @media (max-width: 425px) {
@@ -111,11 +111,9 @@ const Heart = styled.div`
   }
 `;
 
-const HeartInText = styled.span`
-  margin-bottom: -5.3%;
-`;
+const HeartInText = styled.span``;
 
-const HeartInTextSmall = styled.span`
+const HeartInTextPercent = styled.span`
   z-index: 5;
   margin-top: -2%;
   margin-bottom: 5%;

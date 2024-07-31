@@ -1,5 +1,5 @@
 .header {
-  font-family: NanumBarunpen;
+  font-family: "나눔바른펜", "sans-serif";
   display: flex;
   align-items: center;
   position: sticky;
@@ -11,10 +11,7 @@
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: rgba(128, 128, 128, 0.37);
-  background: #f4f5ff;
-  /*background-image: url('../../public/paperbg.png');*/
-  /*background-repeat: no-repeat;*/
-  /*background-size: cover;*/
+  background: #F2F2F2;
 }
 
 .header__points {
@@ -33,7 +30,7 @@
 }
 
 .header__points__text {
-  font-family: "Nanum Pen Script";
+  font-family: "Nanum Pen Script", "sans-serif";
   font-size: 23px;
   color: #afa12b;
   font-weight: 100;

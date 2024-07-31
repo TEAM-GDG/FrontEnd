@@ -1,16 +1,34 @@
-@import url('//fonts.googleapis.com/earlyaccess/nanumpenscript.css');
-@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
-
 @font-face {
-  font-family: 'NanumBarunpen';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+  font-family: '나눔바른펜';
+  src: url("../public/fonts/NanumBarunpen/NanumBarunpenR.otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'yg-jalnan';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-family: '나눔손글씨펜';
+  src: url("../public/fonts/NanumPen/NanumPen.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '나눔스퀘어';
+  src: url('../public/fonts/NanumSquare/NanumSquare.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '여기어때잘난체';
+  src: url('../public/fonts/ygJalnan/Jalnan.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPub돋움';
+  src: url('../public/fonts/KoPubDotum/KoPubDotum.otf');
   font-weight: normal;
   font-style: normal;
 }

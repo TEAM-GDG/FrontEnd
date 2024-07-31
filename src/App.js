@@ -6,7 +6,7 @@ import { Outlet, Route, Routes, useNavigate } from 'react-router-dom';
 import MainPage from './pages/mainUtilPage/MainPage';
 import CalPage from './pages/mainUtilPage/CalPage';
 import StatPage from './pages/mainUtilPage/StatPage';
-import CommuPage from './pages/mainUtilPage/CommuPage';
+import CommunityPage from './pages/mainUtilPage/CommunityPage';
 import RankPage from './pages/mainUtilPage/RankPage';
 import NotFoundPage from './pages/etcPage/NotFoundPage';
 import Footer from './components/Footer';
@@ -15,6 +15,7 @@ import LoginPage from './pages/membersPage/LoginPage';
 import RegisterPage from './pages/membersPage/RegisterPage';
 import FindIdPage from './pages/membersPage/FindIdPage';
 import FindPwdPage from './pages/membersPage/FindPwdPage';
+import ChangePwdPage from './pages/membersPage/ChangePwdPage';
 
 const Layout = ({ naviState, handleChangePage }) => {
   return (
@@ -57,21 +58,33 @@ const App = React.memo(() => {
         />
         <Route path="cal" element={<CalPage />} />
         <Route path="insight" element={<StatPage />} />
-        <Route path="community" element={<CommuPage />} />
+        <Route path="community" element={<CommunityPage />} />
         <Route path="rank" element={<RankPage />} />
-
-        {/* 보조 기능 */}
+        {/* 메인페이지 파생 기능 */}
         <Route path="statusRecord" element={<RecordPage />} />
-
+        {/* 커뮤니티 페이지 파생 기능 */}
         {/* 회원 정보 관련 기능 */}
         <Route
           path="membersLogin"
           element={<LoginPage handleChangePage={handleChangePage} />}
         />
-        <Route path="membersRegister" element={<RegisterPage />} />
-        <Route path="membersFindEmail" element={<FindIdPage />} />
-        <Route path="membersFindPassword" element={<FindPwdPage />} />
-
+        <Route
+          path="membersRegister"
+          element={<RegisterPage handleChangePage={handleChangePage} />}
+        />
+        <Route
+          path="membersFindEmail"
+          element={<FindIdPage handleChangePage={handleChangePage} />}
+        />
+        <Route
+          path="membersFindPassword"
+          element={<FindPwdPage handleChangePage={handleChangePage} />}
+        />
+        <Route
+          path="membersResetPassword"
+          element={<ChangePwdPage handleChangePage={handleChangePage} />}
+        />
+        />
         {/* 404 Page */}
         <Route path="*" element={<NotFoundPage />} />
       </Route>
