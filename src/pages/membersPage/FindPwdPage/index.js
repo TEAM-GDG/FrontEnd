@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../../App.css';
 import '../Members.css';
 
 const FindPwdPage = ({ handleChangePage }) => {
-  const [isClicked, setIsClicked] = useState(false);
+  // const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = e => {
     e.preventDefault();
-    setIsClicked(true);
+    // setIsClicked(true);
   };
 
   return (
