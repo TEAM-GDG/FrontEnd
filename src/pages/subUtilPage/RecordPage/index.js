@@ -13,7 +13,7 @@ const RecordPage = () => {
   return (
     <div className="container">
       <IconContainer>
-        <Icon src="emotion.png" />
+        <Icon src="img/emotion.png" />
       </IconContainer>
       <RecordContainer>
         <RecordTitle>오늘 당신의 하루는 어떠셨나요?</RecordTitle>

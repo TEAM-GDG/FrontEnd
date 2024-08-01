@@ -1,84 +1,77 @@
 import React from 'react';
 import '../../../App.css';
-import '../Members.css';
+import styles from '../Members.module.css';
+import { Link } from 'react-router-dom';
 
-const LoginPage = ({ handleChangePage }) => {
+const LoginPage = () => {
   return (
     <div className="container">
-      <div className="membersContainer">
-        <span className="loginTitle">GDG</span>
-        <form className="membersForm">
+      <div className={styles.membersContainer}>
+        <span className={styles.loginTitle}>GDG</span>
+        <form className={styles.membersForm}>
           <input
-            className="membersTextInput"
+            className={styles.membersTextInput}
             type="text"
             id="email"
             placeholder="이메일"
           />
           <input
-            className="membersTextInput"
+            className={styles.membersTextInput}
             type="password"
             id="pwd"
             placeholder="비밀번호"
           />
-          <div className="loginBoxInputContainer">
-            <input className="loginBoxInput" type="checkbox" id="autologin" />
-            <label className="loginBoxInputLabel" htmlFor="autologin">
+          <div className={styles.loginBoxInputContainer}>
+            <input
+              className={styles.loginBoxInput}
+              type="checkbox"
+              id="autologin"
+            />
+            <label className={styles.loginBoxInputLabel} htmlFor="autologin">
               자동 로그인
             </label>
           </div>
-          <button className="membersSubmitButton" type="submit">
+          <button className={styles.membersSubmitButton} type="submit">
             로그인
           </button>
         </form>
-        <div className="membersUtilityContainer">
-          <a
-            className="membersUtilityButton"
-            href="membersFindEmail"
-            onClick={e => handleChangePage(e, `membersFindEmail`)}
-          >
+        <div className={styles.membersUtilityContainer}>
+          <Link to="../findemail" className={styles.membersUtilityButton}>
             이메일찾기
-          </a>
+          </Link>
           |
-          <a
-            className="membersUtilityButton"
-            href="membersFindPassword"
-            onClick={e => handleChangePage(e, `membersFindPassword`)}
-          >
+          <Link to="../findpassword" className={styles.membersUtilityButton}>
             비밀번호찾기
-          </a>
+          </Link>
           |
-          <a
-            className="membersUtilityButton"
-            href="membersRegister"
-            onClick={e => handleChangePage(e, `membersRegister`)}
-          >
+          <Link to="../register" className={styles.membersUtilityButton}>
             회원가입
-          </a>
+          </Link>
         </div>
         <div className="horizon" />
         소셜 계정으로 로그인
-        <div className="loginSocialContainer">
-          <a className="loginSocialBox" href="네이버로 가요">
+        <div className={styles.loginSocialContainer}>
+          <Link to="네이버로가요" className={styles.loginSocialBox}>
             <img
-              className="loginSocialImage"
-              src="snsIcon/naverBtn.png"
+              className={styles.loginSocialImage}
+              src="img/snsIcon/naverBtn.png"
               alt="네이버"
             />
-          </a>
-          <a className="loginSocialBox" href="카카오로 가요">
+          </Link>
+          <Link to="카카오로가요" className={styles.loginSocialBox}>
             <img
-              className="loginSocialImage"
-              src="snsIcon/kakaoBtn.png"
+              className={styles.loginSocialImage}
+              src="img/snsIcon/kakaoBtn.png"
               alt="카카오"
             />
-          </a>
-          <a className="loginSocialBox" href="구글로 가요">
+          </Link>
+          <Link to="구글로가요" className={styles.loginSocialBox}>
             <img
-              className="loginSocialImage"
-              src="snsIcon/googleBtn.png"
+              className={styles.loginSocialImage}
+              src="img/snsIcon/googleBtn.png"
               alt="구글"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

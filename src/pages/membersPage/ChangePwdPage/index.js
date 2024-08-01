@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../../App.css';
-import '../Members.css';
+import styles from '../Members.module.css';
+import { Link } from 'react-router-dom';
 
-const ChangePwdPage = ({ handleChangePage }) => {
+const ChangePwdPage = () => {
   const handleChangePwd = e => {
     e.preventDefault();
     alert('뿡!');
@@ -10,24 +10,24 @@ const ChangePwdPage = ({ handleChangePage }) => {
 
   return (
     <div className="container">
-      <div className="membersContainer">
-        <span className="findTitle">비밀번호 재설정</span>
+      <div className={styles.membersContainer}>
+        <span className={styles.findTitle}>비밀번호 재설정</span>
         <div className="horizon" />
-        <form className="membersForm">
+        <form className={styles.membersForm}>
           <input
-            className="membersTextInput"
+            className={styles.membersTextInput}
             type="password"
             id="new_password"
             placeholder="새 비밀번호"
           />
           <input
-            className="membersTextInput"
+            className={styles.membersTextInput}
             type="password"
             id="confirm_password"
             placeholder="비밀번호 확인"
           />
           <button
-            className="membersSubmitButton"
+            className={styles.membersSubmitButton}
             type="button"
             onClick={e => {
               handleChangePwd(e);
@@ -36,14 +36,10 @@ const ChangePwdPage = ({ handleChangePage }) => {
             비밀번호 재설정
           </button>
         </form>
-        <div className="membersUtilityContainer">
-          <a
-            className="membersUtilityButton"
-            href="어디로감"
-            onClick={e => handleChangePage(e, `어디로감?`)}
-          >
+        <div className={styles.membersUtilityContainer}>
+          <Link to="어디로감" className={styles.membersUtilityButton}>
             돌아가기
-          </a>
+          </Link>
         </div>
       </div>
     </div>

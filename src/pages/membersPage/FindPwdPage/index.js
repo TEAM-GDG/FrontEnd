@@ -1,8 +1,9 @@
 import React from 'react';
 import '../../../App.css';
-import '../Members.css';
+import styles from '../Members.module.css';
+import { Link } from 'react-router-dom';
 
-const FindPwdPage = ({ handleChangePage }) => {
+const FindPwdPage = () => {
   // const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = e => {
@@ -12,60 +13,56 @@ const FindPwdPage = ({ handleChangePage }) => {
 
   return (
     <div className="container">
-      <div className="membersContainer">
-        <span className="findTitle">비밀번호 찾기</span>
+      <div className={styles.membersContainer}>
+        <span className={styles.findTitle}>비밀번호 찾기</span>
         <div className="horizon" />
-        <form className="membersForm">
+        <form className={styles.membersForm}>
           <input
-            className="membersTextInput"
+            className={styles.membersTextInput}
             type="text"
             id="name"
             placeholder="이름"
           />
           <input
-            className="membersTextInput"
+            className={styles.membersTextInput}
             type="text"
             id="email"
             placeholder="이메일"
           />
-          <div className="findAuthContainer">
+          <div className={styles.findAuthContainer}>
             <input
-              className="membersTextInput"
+              className={styles.membersTextInput}
               type="tel"
               id="phone"
               placeholder="휴대폰 번호"
             />
             <button
-              className="findAuthButton"
+              className={styles.findAuthButton}
               type="button"
               onClick={e => handleClick(e)}
             >
               전송
             </button>
           </div>
-          <div className="findAuthContainer">
+          <div className={styles.findAuthContainer}>
             <input
-              className="membersTextInput"
+              className={styles.membersTextInput}
               type="text"
               id="verification_code"
               placeholder="인증번호 입력"
             />
-            <button className="findAuthButton" type="button">
+            <button className={styles.findAuthButton} type="button">
               확인
             </button>
           </div>
-          <button className="membersSubmitButton" type="submit">
+          <button className={styles.membersSubmitButton} type="submit">
             비밀번호 찾기
           </button>
         </form>
-        <div className="membersUtilityContainer">
-          <a
-            className="membersUtilityButton"
-            href="membersLogin"
-            onClick={e => handleChangePage(e, `membersLogin`)}
-          >
+        <div className={styles.membersUtilityContainer}>
+          <Link to="../login" className={styles.membersUtilityButton}>
             돌아가기
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ const StatPage = () => {
   return (
     <div className="container">
       <IconContainer>
-        <Icon src="diary.png" />
+        <Icon src="img/diary.png" />
       </IconContainer>
       <InsightContainer>
         <Insight>
