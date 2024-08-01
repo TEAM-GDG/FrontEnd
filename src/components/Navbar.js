@@ -3,64 +3,58 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = ({ naviState }) => {
+  const cal = document.getElementById('cal');
+  const insight = document.getElementById('insight');
+  const home = document.getElementById('home');
+  const community = document.getElementById('community');
+  const rank = document.getElementById('rank');
+
   useEffect(() => {
     switch (naviState) {
       case 'cal':
-        document.getElementById('cal').src = 'img/navIcon/active/cal.png';
-        document.getElementById('insight').src =
-          'img/navIcon/inactive/insight.png';
-        document.getElementById('home').src = 'img/navIcon/inactive/home.png';
-        document.getElementById('community').src =
-          'img/navIcon/inactive/community.png';
-        document.getElementById('rank').src = 'img/navIcon/inactive/rank.png';
+        cal.src = 'img/navIcon/active/cal.png';
+        insight.src = 'img/navIcon/inactive/insight.png';
+        home.src = 'img/navIcon/inactive/home.png';
+        community.src = 'img/navIcon/inactive/community.png';
+        rank.src = 'img/navIcon/inactive/rank.png';
         break;
       case 'insight':
-        document.getElementById('cal').src = 'img/navIcon/inactive/cal.png';
-        document.getElementById('insight').src =
-          'img/navIcon/active/insight.png';
-        document.getElementById('home').src = 'img/navIcon/inactive/home.png';
-        document.getElementById('community').src =
-          'img/navIcon/inactive/community.png';
-        document.getElementById('rank').src = 'img/navIcon/inactive/rank.png';
+        cal.src = 'img/navIcon/inactive/cal.png';
+        insight.src = 'img/navIcon/active/insight.png';
+        home.src = 'img/navIcon/inactive/home.png';
+        community.src = 'img/navIcon/inactive/community.png';
+        rank.src = 'img/navIcon/inactive/rank.png';
         break;
       case '/':
-        document.getElementById('cal').src = 'img/navIcon/inactive/cal.png';
-        document.getElementById('insight').src =
-          'img/navIcon/inactive/insight.png';
-        document.getElementById('home').src = 'img/navIcon/active/home.png';
-        document.getElementById('community').src =
-          'img/navIcon/inactive/community.png';
-        document.getElementById('rank').src = 'img/navIcon/inactive/rank.png';
+        cal.src = 'img/navIcon/inactive/cal.png';
+        insight.src = 'img/navIcon/inactive/insight.png';
+        home.src = 'img/navIcon/active/home.png';
+        community.src = 'img/navIcon/inactive/community.png';
+        rank.src = 'img/navIcon/inactive/rank.png';
         break;
       case 'community':
-        document.getElementById('cal').src = 'img/navIcon/inactive/cal.png';
-        document.getElementById('insight').src =
-          'img/navIcon/inactive/insight.png';
-        document.getElementById('home').src = 'img/navIcon/inactive/home.png';
-        document.getElementById('community').src =
-          'img/navIcon/active/community.png';
-        document.getElementById('rank').src = 'img/navIcon/inactive/rank.png';
+        cal.src = 'img/navIcon/inactive/cal.png';
+        insight.src = 'img/navIcon/inactive/insight.png';
+        home.src = 'img/navIcon/inactive/home.png';
+        community.src = 'img/navIcon/active/community.png';
+        rank.src = 'img/navIcon/inactive/rank.png';
         break;
       case 'rank':
-        document.getElementById('cal').src = 'img/navIcon/inactive/cal.png';
-        document.getElementById('insight').src =
-          'img/navIcon/inactive/insight.png';
-        document.getElementById('home').src = 'img/navIcon/inactive/home.png';
-        document.getElementById('community').src =
-          'img/navIcon/inactive/community.png';
-        document.getElementById('rank').src = 'img/navIcon/active/rank.png';
+        cal.src = 'img/navIcon/inactive/cal.png';
+        insight.src = 'img/navIcon/inactive/insight.png';
+        home.src = 'img/navIcon/inactive/home.png';
+        community.src = 'img/navIcon/inactive/community.png';
+        rank.src = 'img/navIcon/active/rank.png';
         break;
       default:
-        document.getElementById('cal').src = 'img/navIcon/inactive/cal.png';
-        document.getElementById('insight').src =
-          'img/navIcon/inactive/insight.png';
-        document.getElementById('home').src = 'img/navIcon/inactive/home.png';
-        document.getElementById('community').src =
-          'img/navIcon/inactive/community.png';
-        document.getElementById('rank').src = 'img/navIcon/inactive/rank.png';
+        cal.src = 'img/navIcon/inactive/cal.png';
+        insight.src = 'img/navIcon/inactive/insight.png';
+        home.src = 'img/navIcon/inactive/home.png';
+        community.src = 'img/navIcon/inactive/community.png';
+        rank.src = 'img/navIcon/inactive/rank.png';
         break;
     }
-  }, [naviState]);
+  }, [naviState, cal, insight, home, community, rank]);
 
   return (
     <div className="navbar">

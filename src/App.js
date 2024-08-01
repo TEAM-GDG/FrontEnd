@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import './App.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import { Outlet, Route, Routes, useLocation } from 'react-router-dom';
