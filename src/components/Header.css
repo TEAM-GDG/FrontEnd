@@ -1,5 +1,5 @@
 .header {
-  font-family: "나눔바른펜", "sans-serif";
+  font-family: "나눔스퀘어", "sans-serif";
   display: flex;
   align-items: center;
   position: sticky;
@@ -30,8 +30,8 @@
 }
 
 .header__points__text {
-  font-family: "Nanum Pen Script", "sans-serif";
-  font-size: 23px;
+  font-family: "나눔스퀘어", "sans-serif";
+  font-size: 13px;
   color: #afa12b;
   font-weight: 100;
 }
@@ -45,12 +45,29 @@
   width: 33%;
 }
 
-.header__title__text {
+.header__title__img {
+  height: 80px;
+  width: 80px;
   font-size: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media(max-width: 425px) {
+    height: 75px;
+    width: 75px;
+  }
+
+  @media(max-width: 375px) {
+    height: 70px;
+    width: 70px;
+  }
+
+  @media(max-width: 320px) {
+    height: 65px;
+    width: 65px;
+  }
 }
 
 .header__community__toggle {
@@ -66,10 +83,7 @@
     width: 28px;
   }
   .header__points__text {
-    font-size: 21px;
-  }
-  .header__title__text {
-    font-size: 21px;
+    font-size: 12px;
   }
 }
 
@@ -79,10 +93,7 @@
     width: 24px;
   }
   .header__points__text {
-    font-size: 19px;
-  }
-  .header__title__text {
-    font-size: 19px;
+    font-size: 11px;
   }
 }
 
@@ -92,9 +103,6 @@
     width: 22px;
   }
   .header__points__text {
-    font-size: 17px;
-  }
-  .header__title__text {
-    font-size: 17px;
+    font-size: 10px;
   }
 }

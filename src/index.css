@@ -1,34 +1,54 @@
 @font-face {
-  font-family: '나눔바른펜';
-  src: url("../public/fonts/NanumBarunpen/NanumBarunpenR.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: '나눔손글씨펜';
-  src: url("../public/fonts/NanumPen/NanumPen.otf");
+  font-family: '나눔스퀘어라이트';
+  src: url('/public/fonts/NanumSquare/NanumSquareLt.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: '나눔스퀘어';
-  src: url('../public/fonts/NanumSquare/NanumSquare.otf');
+  src: url('/public/fonts/NanumSquare/NanumSquareRg.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: '여기어때잘난체';
-  src: url('../public/fonts/ygJalnan/Jalnan.otf');
+  font-family: '나눔스퀘어볼드';
+  src: url('/public/fonts/NanumSquare/NanumSquareBd.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'KoPub돋움';
-  src: url('../public/fonts/KoPubDotum/KoPubDotum.otf');
+  src: url('/public/fonts/KoPubDotum/KoPubDotumRg.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPub돋움볼드';
+  src: url('/public/fonts/KoPubDotum/KoPubDotumBd.otf');
+}
+
+@font-face {
+  font-family: '지마켓라이트';
+  src: url('/public/fonts/GmarketSansOTF/GmarketSansLight.otf');
+}
+
+@font-face {
+  font-family: '지마켓';
+  src: url('/public/fonts/GmarketSansOTF/GmarketSansMedium.otf');
+}
+
+@font-face {
+  font-family: '지마켓볼드';
+  src: url('/public/fonts/GmarketSansOTF/GmarketSansBold.otf');
+}
+
+@font-face {
+  font-family: '여기어때잘난체';
+  src: url('../public/fonts/ygJalnan/Jalnan.otf');
   font-weight: normal;
   font-style: normal;
 }

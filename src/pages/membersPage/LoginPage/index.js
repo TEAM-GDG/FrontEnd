@@ -6,7 +6,7 @@ const LoginPage = () => {
   return (
     <div className="container">
       <div className={styles.membersContainer}>
-        <span className={styles.loginTitle}>GDG</span>
+        <img className={styles.loginTitle} src="/img/logo.png" alt="로고" />
         <form className={styles.membersForm}>
           <input
             className={styles.membersTextInput}
@@ -53,21 +53,21 @@ const LoginPage = () => {
           <Link to="네이버로가요" className={styles.loginSocialBox}>
             <img
               className={styles.loginSocialImage}
-              src="img/snsIcon/naverBtn.png"
+              src="/img/snsIcon/naverBtn.png"
               alt="네이버"
             />
           </Link>
           <Link to="카카오로가요" className={styles.loginSocialBox}>
             <img
               className={styles.loginSocialImage}
-              src="img/snsIcon/kakaoBtn.png"
+              src="/img/snsIcon/kakaoBtn.png"
               alt="카카오"
             />
           </Link>
           <Link to="구글로가요" className={styles.loginSocialBox}>
             <img
               className={styles.loginSocialImage}
-              src="img/snsIcon/googleBtn.png"
+              src="/img/snsIcon/googleBtn.png"
               alt="구글"
             />
           </Link>

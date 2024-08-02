@@ -37,14 +37,14 @@
 }
 
 .insightTitle {
-  font-size: 25px;
+  font-size: 21px;
 
   @media (max-width: 425px) {
-    font-size: 23px;
+    font-size: 19px;
   }
 
   @media (max-width: 320px) {
-    font-size: 21px;
+    font-size: 17px;
   }
 }
 
@@ -68,13 +68,13 @@
   margin: 5% 0 5% 0;
   padding: 0 3% 0 3%;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 19px;
 
   @media (max-width: 425px) {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   @media (max-width: 320px) {
-    font-size: 16px;
+    font-size: 15px;
   }
 }

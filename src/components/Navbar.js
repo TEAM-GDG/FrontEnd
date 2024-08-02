@@ -3,58 +3,58 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = ({ naviState }) => {
-  const cal = document.getElementById('cal');
-  const insight = document.getElementById('insight');
-  const home = document.getElementById('home');
-  const community = document.getElementById('community');
-  const rank = document.getElementById('rank');
+  let calImg = '/img/navIcon/inactive/cal.png';
+  let insightImg = '/img/navIcon/inactive/insight.png';
+  let homeImg = '/img/navIcon/inactive/home.png';
+  let communityImg = '/img/navIcon/inactive/community.png';
+  let rankImg = '/img/navIcon/inactive/rank.png';
 
   useEffect(() => {
     switch (naviState) {
       case 'cal':
-        cal.src = 'img/navIcon/active/cal.png';
-        insight.src = 'img/navIcon/inactive/insight.png';
-        home.src = 'img/navIcon/inactive/home.png';
-        community.src = 'img/navIcon/inactive/community.png';
-        rank.src = 'img/navIcon/inactive/rank.png';
+        calImg = '/img/navIcon/active/cal.png';
+        insightImg = '/img/navIcon/inactive/insight.png';
+        homeImg = '/img/navIcon/inactive/home.png';
+        communityImg = '/img/navIcon/inactive/community.png';
+        rankImg = '/img/navIcon/inactive/rank.png';
         break;
       case 'insight':
-        cal.src = 'img/navIcon/inactive/cal.png';
-        insight.src = 'img/navIcon/active/insight.png';
-        home.src = 'img/navIcon/inactive/home.png';
-        community.src = 'img/navIcon/inactive/community.png';
-        rank.src = 'img/navIcon/inactive/rank.png';
+        calImg = '/img/navIcon/inactive/cal.png';
+        insightImg = '/img/navIcon/active/insight.png';
+        homeImg = '/img/navIcon/inactive/home.png';
+        communityImg = '/img/navIcon/inactive/community.png';
+        rankImg = '/img/navIcon/inactive/rank.png';
         break;
       case '/':
-        cal.src = 'img/navIcon/inactive/cal.png';
-        insight.src = 'img/navIcon/inactive/insight.png';
-        home.src = 'img/navIcon/active/home.png';
-        community.src = 'img/navIcon/inactive/community.png';
-        rank.src = 'img/navIcon/inactive/rank.png';
+        calImg = '/img/navIcon/inactive/cal.png';
+        insightImg = '/img/navIcon/inactive/insight.png';
+        homeImg = '/img/navIcon/active/home.png';
+        communityImg = '/img/navIcon/inactive/community.png';
+        rankImg = '/img/navIcon/inactive/rank.png';
         break;
       case 'community':
-        cal.src = 'img/navIcon/inactive/cal.png';
-        insight.src = 'img/navIcon/inactive/insight.png';
-        home.src = 'img/navIcon/inactive/home.png';
-        community.src = 'img/navIcon/active/community.png';
-        rank.src = 'img/navIcon/inactive/rank.png';
+        calImg = '/img/navIcon/inactive/cal.png';
+        insightImg = '/img/navIcon/inactive/insight.png';
+        homeImg = '/img/navIcon/inactive/home.png';
+        communityImg = '/img/navIcon/active/community.png';
+        rankImg = '/img/navIcon/inactive/rank.png';
         break;
       case 'rank':
-        cal.src = 'img/navIcon/inactive/cal.png';
-        insight.src = 'img/navIcon/inactive/insight.png';
-        home.src = 'img/navIcon/inactive/home.png';
-        community.src = 'img/navIcon/inactive/community.png';
-        rank.src = 'img/navIcon/active/rank.png';
+        calImg = '/img/navIcon/inactive/cal.png';
+        insightImg = '/img/navIcon/inactive/insight.png';
+        homeImg = '/img/navIcon/inactive/home.png';
+        communityImg = '/img/navIcon/inactive/community.png';
+        rankImg = '/img/navIcon/active/rank.png';
         break;
       default:
-        cal.src = 'img/navIcon/inactive/cal.png';
-        insight.src = 'img/navIcon/inactive/insight.png';
-        home.src = 'img/navIcon/inactive/home.png';
-        community.src = 'img/navIcon/inactive/community.png';
-        rank.src = 'img/navIcon/inactive/rank.png';
+        calImg = '/img/navIcon/inactive/cal.png';
+        insightImg = '/img/navIcon/inactive/insight.png';
+        homeImg = '/img/navIcon/inactive/home.png';
+        communityImg = '/img/navIcon/inactive/community.png';
+        rankImg = '/img/navIcon/inactive/rank.png';
         break;
     }
-  }, [naviState, cal, insight, home, community, rank]);
+  }, [naviState, calImg, insightImg, homeImg, communityImg, rankImg]);
 
   return (
     <div className="navbar">
@@ -62,7 +62,7 @@ const Navbar = ({ naviState }) => {
         <img
           id="cal"
           className="navbar__box__button"
-          src="img/navIcon/inactive/cal.png"
+          src={calImg}
           alt="캘린더"
         />
         <span className="navbar__box__text">챌린지</span>
@@ -71,25 +71,20 @@ const Navbar = ({ naviState }) => {
         <img
           id="insight"
           className="navbar__box__button"
-          src="img/navIcon/inactive/insight.png"
+          src={insightImg}
           alt="통계"
         />
         <span className="navbar__box__text">통계</span>
       </Link>
       <Link to="/" className="navbar__box">
-        <img
-          id="home"
-          className="navbar__box__button"
-          src="img/navIcon/inactive/home.png"
-          alt="홈"
-        />
+        <img id="home" className="navbar__box__button" src={homeImg} alt="홈" />
         <span className="navbar__box__text">홈</span>
       </Link>
       <Link to="community" className="navbar__box">
         <img
           id="community"
           className="navbar__box__button"
-          src="img/navIcon/inactive/community.png"
+          src={communityImg}
           alt="커뮤니티"
         />
         <span className="navbar__box__text">커뮤니티</span>
@@ -98,7 +93,7 @@ const Navbar = ({ naviState }) => {
         <img
           id="rank"
           className="navbar__box__button"
-          src="img/navIcon/inactive/rank.png"
+          src={rankImg}
           alt="랭킹"
         />
         <span className="navbar__box__text">랭킹</span>
