@@ -7,28 +7,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="오류가너무많아">
-      <change afterPath="$PROJECT_DIR$/src/pages/subUtilPage/CommunitySearchPage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/isLogin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/posts.js" afterDir="false" />
+    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="2408040002">
+      <change afterPath="$PROJECT_DIR$/public/img/company.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/private.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/membersPage/RegisterPage/PurposeSelect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/membersPage/RegisterPage/RegisterMain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/subUtilPage/CommunityWritePage/CommunityWrite.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/communityIcon/write.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/communityIcon/write.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mainUtilPage/CommunityPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/CommunityPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mainUtilPage/MainPage/Main.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/MainPage/Main.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mainUtilPage/MainPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/MainPage/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/membersPage/Members.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/Members.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/membersPage/RegisterPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/RegisterPage/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/subUtilPage/CommunityWritePage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/subUtilPage/CommunityWritePage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/clickCommunityPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -176,7 +165,7 @@
       <workItem from="1722283882884" duration="29997000" />
       <workItem from="1722424878900" duration="14880000" />
       <workItem from="1722513350151" duration="25302000" />
-      <workItem from="1722601202503" duration="17539000" />
+      <workItem from="1722601202503" duration="29682000" />
     </task>
     <task id="LOCAL-00001" summary="협업 관련 설정">
       <option name="closed" value="true" />
@@ -466,7 +455,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722655042936</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="2408040002">
+      <option name="closed" value="true" />
+      <created>1722697390996</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1722697390996</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +471,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="미친 리드미 추가" />
     <MESSAGE value="리팩토링좀 하구요 ㅎ" />
     <MESSAGE value="반응형이 재밌다" />
     <MESSAGE value="하트로 바꿈" />
@@ -499,6 +495,7 @@
     <MESSAGE value="나를슬프게하는이미지크기" />
     <MESSAGE value="커밋을 할 때에는 반드시 모든것을확인합시다" />
     <MESSAGE value="오류가너무많아" />
-    <option name="LAST_COMMIT_MESSAGE" value="오류가너무많아" />
+    <MESSAGE value="2408040002" />
+    <option name="LAST_COMMIT_MESSAGE" value="2408040002" />
   </component>
 </project>
