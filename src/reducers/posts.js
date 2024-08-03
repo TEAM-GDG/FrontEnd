@@ -102,6 +102,16 @@ const post = [
     like_count: 15,
     comment_count: 66,
   },
+  {
+    post_id: 11,
+    title: '난 대청소 할거임',
+    image_path: null,
+    name: 'rohgibong',
+    created_at: '10시간 전',
+    view_count: 32,
+    like_count: 1,
+    comment_count: 5,
+  },
 ];
 
 const posts = (state = post, action) => {
