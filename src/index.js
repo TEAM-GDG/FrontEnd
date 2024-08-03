@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { configureStore } from '@reduxjs/toolkit';
 import rootReducer from './reducers';
+import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -13,19 +14,13 @@ const store = configureStore({
   reducer: rootReducer,
 });
 
-const render = () => {
-  root.render(
-    <BrowserRouter>
-      <App
-        value={store.getState()}
-        onClickCommunityPage={store.dispatch({ type: 'CLICK_COMMUNITY_PAGE' })}
-      />
-    </BrowserRouter>,
-  );
-};
-
-render();
-store.subscribe(render);
+root.render(
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </BrowserRouter>,
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

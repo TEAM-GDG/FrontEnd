@@ -102,6 +102,10 @@
   width: 33%;
 }
 
+.headerCommunityImgContainer {
+  margin: 0 10% 0 5%;
+}
+
 .headerCommunityImg {
   height: 30px;
   width: 30px;

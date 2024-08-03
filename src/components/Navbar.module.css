@@ -15,7 +15,7 @@
     font-family: '나눔스퀘어', 'sans-serif';
 }
 
-.navbar__box {
+.navbarContainer {
     display: flex;
     flex-direction: column;
     -webkit-box-align: center;
@@ -26,31 +26,23 @@
     width: 20%;
 }
 
-.navbar__box__button {
+.navbarButton {
     height: 26px;
     width: 26px;
 }
 
-.navbar__box__text {
+.navbarText {
     font-size: 12px;
     margin-top: 5%;
     color: white;
-}
 
-@media (max-width: 520px) {
-    .navbar__box__text {
+    @media (max-width: 520px) {
         font-size: 10px;
     }
-}
-
-@media (max-width: 440px) {
-    .navbar__box__text {
+    @media (max-width: 440px) {
         font-size: 10px;
     }
-}
-
-@media (max-width: 350px) {
-    .navbar__box__text {
+    @media (max-width: 350px) {
         font-size: 8px;
     }
 }

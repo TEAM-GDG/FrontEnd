@@ -1,20 +1,39 @@
 import React from 'react';
 import styles from './Main.module.css';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 
 const MainPage = () => {
+  const isLogin = useSelector(state => state.isLogin);
+
+  const dispatch = useDispatch();
+
   return (
     <div className="container">
       <div className={styles.topInfo}>
-        <Link to="members/login" className={styles.profile}>
+        <Link
+          to={isLogin ? 'members/username' : 'members/login'}
+          className={styles.link}
+        >
           <img
             src="/img/profile.png"
             className={styles.profileImage}
             alt="프로필사진"
           />
+          <div
+            className={styles.nickname}
+            style={
+              isLogin
+                ? { color: `black` }
+                : { color: `blue`, textDecoration: `underline` }
+            }
+          >
+            로그인이 필요합니다
+          </div>
         </Link>
-        <div className={styles.nickname}>로그인이 필요합니다</div>
-        <div className={styles.recordTimeText}>감정 기록 n일째</div>
+        <div className={styles.recordTimeText}>
+          감정 기록 <span className={styles.recordTimeTextDate}>486</span>일째
+        </div>
       </div>
       <div className={styles.emotionContainer}>
         <div className={styles.heart}>

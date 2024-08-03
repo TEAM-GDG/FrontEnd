@@ -31,14 +31,20 @@ const Header = ({ location }) => {
       <div className={styles.headerCommunityContainer}>
         {isCommunityPage && (
           <>
-            <Link to="community/search">
+            <Link
+              to="community/search"
+              className={styles.headerCommunityImgContainer}
+            >
               <img
                 src="/img/communityIcon/search.png"
                 alt="search"
                 className={styles.headerCommunityImg}
               />
             </Link>
-            <Link to="community/write">
+            <Link
+              to="community/write"
+              className={styles.headerCommunityImgContainer}
+            >
               <img
                 src="/img/communityIcon/write.png"
                 alt="write"
