@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import { Outlet, Route, Routes, useLocation } from 'react-router-dom';
 import MainPage from './pages/mainUtilPage/MainPage';
-import CalPage from './pages/mainUtilPage/CalPage';
 import StatPage from './pages/mainUtilPage/StatPage';
 import CommunityPage from './pages/mainUtilPage/CommunityPage';
 import RankPage from './pages/mainUtilPage/RankPage';
@@ -18,6 +17,7 @@ import ChangePwdPage from './pages/membersPage/ChangePwdPage';
 import CommunityPostPage from './pages/subUtilPage/CommunityPostPage';
 import CommunitySearchPage from './pages/subUtilPage/CommunitySearchPage';
 import CommunityWritePage from './pages/subUtilPage/CommunityWritePage';
+import MyPage from './pages/mainUtilPage/MyPage';
 
 const Layout = ({ location, isMembersPage }) => {
   return (
@@ -49,9 +49,6 @@ const App = React.memo(() => {
         {/* 메인페이지 */}
         <Route index element={<MainPage />} />
 
-        {/* 챌린지(폐기예정) */}
-        <Route path="cal" element={<CalPage />} />
-
         {/* 통계 */}
         <Route path="insight" element={<StatPage />} />
 
@@ -65,6 +62,9 @@ const App = React.memo(() => {
 
         {/* 랭킹 */}
         <Route path="rank" element={<RankPage />} />
+
+        {/* 마이페이지 */}
+        <Route path="mypage" element={<MyPage />} />
 
         {/* 감정 기록 */}
         <Route path="status">
