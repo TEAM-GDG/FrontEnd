@@ -1,44 +1,51 @@
 import React, { useState } from 'react';
-import './Header.css';
+import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
 
 const Header = ({ location }) => {
-  const [isMembersPage, setIsMembersPage] = useState(false);
   const [isCommunityPage, setIsCommunityPage] = useState(false);
 
   React.useEffect(() => {
     setIsCommunityPage(location.pathname === '/community');
-    setIsMembersPage(location.pathname.includes('/members'));
   }, [location.pathname]);
 
   return (
-    <header className="header">
-      <div className="header__points">
-        {!isMembersPage && (
-          <>
-            <img
-              className="header__points__img"
-              src="/img/points.png"
-              alt="points"
-            />
-            <span className="header__points__text">1,385,968</span>
-          </>
-        )}
+    <header className={styles.header}>
+      <div className={styles.headerPointsContainer}>
+        <img
+          className={styles.headerPointsImg}
+          src="/img/points.png"
+          alt="points"
+        />
+        <span className={styles.headerPointsText}>1,385,968</span>
       </div>
-      <div className="header__title">
+      <div className={styles.headerTitleContainer}>
         <Link to="/">
-          <img src="/img/logo.png" alt="logo" className="header__title__img" />
+          <img
+            src="/img/logo.png"
+            alt="logo"
+            className={styles.headerTitleImg}
+          />
         </Link>
       </div>
-      <div className="header__community__toggle">
+      <div className={styles.headerCommunityContainer}>
         {isCommunityPage && (
-          <Link to="community/write">
-            <img
-              style={{ width: `10px`, height: `10px` }}
-              src="/img/communityIcon/search.png"
-              alt="search"
-            />
-          </Link>
+          <>
+            <Link to="community/search">
+              <img
+                src="/img/communityIcon/search.png"
+                alt="search"
+                className={styles.headerCommunityImg}
+              />
+            </Link>
+            <Link to="community/write">
+              <img
+                src="/img/communityIcon/write.png"
+                alt="write"
+                className={styles.headerCommunityImg}
+              />
+            </Link>
+          </>
         )}
       </div>
     </header>

@@ -8,39 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="이미지가왜자꾸깨지는것이니">
-      <change afterPath="$PROJECT_DIR$/public/fonts/GmarketSansOTF/GmarketSansBold.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/GmarketSansOTF/GmarketSansLight.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/GmarketSansOTF/GmarketSansMedium.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/KoPubDotum/KoPubDotumBd.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/NanumSquare/NanumSquareBd.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/NanumSquare/NanumSquareEb.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/NanumSquare/NanumSquareHv.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/NanumSquare/NanumSquareLt.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/NanumSquare/NanumSquareRg.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/MainPage/Main.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/subUtilPage/CommunityWritePage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/subUtilPage/RecordPage/Record.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/KoPubDotum/KoPubDotum.otf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/KoPubDotum/KoPubDotumRg.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/NanumBarunpen/NanumBarunpenB.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/NanumBarunpen/NanumBarunpenR.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/NanumPen/NanumPen.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/heart.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/heart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/points.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/points.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mainUtilPage/CommunityPage/Community.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/CommunityPage/Community.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mainUtilPage/MainPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/MainPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mainUtilPage/StatPage/Stat.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/StatPage/Stat.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/membersPage/LoginPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/LoginPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/membersPage/Members.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/Members.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/subUtilPage/RecordPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/subUtilPage/RecordPage/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +159,7 @@
       <workItem from="1722283882884" duration="29997000" />
       <workItem from="1722424878900" duration="14880000" />
       <workItem from="1722513350151" duration="25302000" />
-      <workItem from="1722601202503" duration="93000" />
+      <workItem from="1722601202503" duration="5206000" />
     </task>
     <task id="LOCAL-00001" summary="협업 관련 설정">
       <option name="closed" value="true" />
@@ -446,7 +417,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722531653535</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="이미지가왜자꾸깨지는것이니">
+      <option name="closed" value="true" />
+      <created>1722603211944</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1722603211948</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import { Outlet, Route, Routes, useLocation } from 'react-router-dom';
@@ -17,10 +17,10 @@ import FindPwdPage from './pages/membersPage/FindPwdPage';
 import ChangePwdPage from './pages/membersPage/ChangePwdPage';
 import CommunityPostPage from './pages/subUtilPage/CommunityPostPage';
 
-const Layout = ({ location }) => {
+const Layout = ({ location, isMembersPage }) => {
   return (
     <div className="App">
-      <Header location={location} />
+      {!isMembersPage && <Header location={location} />}
       <Outlet />
       <Footer />
       <Navbar location={location} />
@@ -29,15 +29,21 @@ const Layout = ({ location }) => {
 };
 
 const App = React.memo(({ value, onClickCommunityPage }) => {
+  const [isMembersPage, setIsMembersPage] = useState(false);
+
   let location = useLocation();
 
   useEffect(() => {
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+    setIsMembersPage(location.pathname.includes('/members'));
   }, [location.pathname]);
 
   return (
     <Routes>
-      <Route path="/" element={<Layout location={location} />}>
+      <Route
+        path="/"
+        element={<Layout location={location} isMembersPage={isMembersPage} />}
+      >
         {/* 메인페이지 */}
         <Route index element={<MainPage />} />
 
