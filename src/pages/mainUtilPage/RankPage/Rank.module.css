@@ -25,6 +25,16 @@
   font-size: 15px;
   font-weight: bold;
   color: #6e6e6e;
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+  @media (max-width: 375px) {
+    font-size: 13px;
+  }
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
 }
 
 .rankTopInfoTopTen {
@@ -32,6 +42,16 @@
   font-family: '나눔스퀘어볼드', 'sans-serif';
   font-size: 30px;
   color: #6e6d6d;
+
+  @media (max-width: 425px) {
+    font-size: 25px;
+  }
+  @media (max-width: 375px) {
+    font-size: 20px;
+  }
+  @media (max-width: 320px) {
+    font-size: 18px;
+  }
 }
 
 .rankPurposeContainer {
@@ -52,6 +72,16 @@
   background: #e2e5e2;
   font-size: 18px;
   font-family: '나눔스퀘어볼드', 'sans-serif';
+
+  @media (max-width: 425px) {
+    font-size: 17px;
+  }
+  @media (max-width: 375px) {
+    font-size: 16px;
+  }
+  @media (max-width: 320px) {
+    font-size: 15px;
+  }
 }
 
 .rankViewContainer {
@@ -73,6 +103,17 @@
   align-items: center;
   justify-content: center;
   margin: 5% 2% 6% 2%;
+  font-size: 18px;
+
+  @media (max-width: 425px) {
+    font-size: 13px;
+  }
+  @media (max-width: 375px) {
+    font-size: 12px;
+  }
+  @media (max-width: 320px) {
+    font-size: 10px;
+  }
 }
 
 .Title {
