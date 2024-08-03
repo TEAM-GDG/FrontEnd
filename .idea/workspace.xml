@@ -7,17 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="2408040002">
-      <change afterPath="$PROJECT_DIR$/public/img/company.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/private.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/membersPage/RegisterPage/PurposeSelect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/membersPage/RegisterPage/RegisterMain.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/subUtilPage/CommunityWritePage/CommunityWrite.module.css" afterDir="false" />
+    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="2408040414">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/membersPage/Members.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/Members.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/membersPage/RegisterPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/RegisterPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/subUtilPage/CommunityWritePage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/subUtilPage/CommunityWritePage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mainUtilPage/CommunityPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/CommunityPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mainUtilPage/MainPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/MainPage/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +158,7 @@
       <workItem from="1722283882884" duration="29997000" />
       <workItem from="1722424878900" duration="14880000" />
       <workItem from="1722513350151" duration="25302000" />
-      <workItem from="1722601202503" duration="29682000" />
+      <workItem from="1722601202503" duration="30059000" />
     </task>
     <task id="LOCAL-00001" summary="협업 관련 설정">
       <option name="closed" value="true" />
@@ -463,7 +456,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722697390996</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="2408040414">
+      <option name="closed" value="true" />
+      <created>1722712548834</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1722712548835</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +472,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="리팩토링좀 하구요 ㅎ" />
     <MESSAGE value="반응형이 재밌다" />
     <MESSAGE value="하트로 바꿈" />
     <MESSAGE value="뭔가 했음 이것저것" />
@@ -496,6 +496,7 @@
     <MESSAGE value="커밋을 할 때에는 반드시 모든것을확인합시다" />
     <MESSAGE value="오류가너무많아" />
     <MESSAGE value="2408040002" />
-    <option name="LAST_COMMIT_MESSAGE" value="2408040002" />
+    <MESSAGE value="2408040414" />
+    <option name="LAST_COMMIT_MESSAGE" value="2408040414" />
   </component>
 </project>

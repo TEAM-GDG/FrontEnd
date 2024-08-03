@@ -1,12 +1,10 @@
 import React from 'react';
 import styles from './Main.module.css';
 import { Link } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 const MainPage = () => {
   const isLogin = useSelector(state => state.isLogin);
-
-  const dispatch = useDispatch();
 
   return (
     <div className="container">
