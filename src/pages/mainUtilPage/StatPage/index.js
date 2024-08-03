@@ -6,7 +6,7 @@ const StatPage = () => {
   return (
     <div className="container">
       <div className={styles.iconContainer}>
-        <img src="img/diary.png" className={styles.icon} />
+        <img src="/img/diary.png" className={styles.icon} alt="다이어리" />
       </div>
       <div className={styles.insightContainer}>
         <div className={styles.insight}>
