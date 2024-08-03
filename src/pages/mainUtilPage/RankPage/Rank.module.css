@@ -48,10 +48,10 @@
   margin: 0 2% 0 2%;
   height: 40px;
   width: 25%;
-  border: 1px solid #4c4c4c;
   border-radius: 5px;
   background: #e2e5e2;
   font-size: 18px;
+  font-family: '나눔스퀘어볼드', 'sans-serif';
 }
 
 .rankViewContainer {
