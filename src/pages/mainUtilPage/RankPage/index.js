@@ -25,12 +25,14 @@ const RankPage = () => {
         </div>
         <div className={styles.rankPurposeContainer}>
           <div
+            style={purpose === 'private' ? { background: '#aeaeae' } : {}}
             className={styles.rankPurposeButton}
             onClick={() => setPurpose('private')}
           >
             개인
           </div>
           <div
+            style={purpose === 'company' ? { background: '#aeaeae' } : {}}
             className={styles.rankPurposeButton}
             onClick={() => setPurpose('company')}
           >
