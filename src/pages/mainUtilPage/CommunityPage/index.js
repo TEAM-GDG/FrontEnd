@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../../App.css';
 import styles from './Community.module.css';
 import { Link } from 'react-router-dom';
@@ -51,13 +51,13 @@ const CommunityPage = () => {
               <div className={styles.communityPostInfoCount}>
                 <img
                   className={styles.communityPostInfoCountImage}
-                  src="img/communityIcon/like.png"
+                  src="/img/communityIcon/like.png"
                   alt="좋아요"
                 />
                 {post.like_count}
                 <img
                   className={styles.communityPostInfoCountImage + ' m-l-15'}
-                  src="img/communityIcon/reply.png"
+                  src="/img/communityIcon/reply.png"
                   alt="댓글"
                 />
                 {post.comment_count}
