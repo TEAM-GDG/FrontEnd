@@ -1,34 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import styles from '../Members.module.css';
+import React, { useState } from 'react';
+import PurposeSelect from './PurposeSelect';
+import RegisterMain from './RegisterMain';
 
 const RegisterPage = () => {
-  const [yongdo, setYongdo] = useState('');
+  const [purpose, setPurpose] = useState(undefined);
 
-  useEffect(() => {
-    console.log(yongdo);
-  }, [yongdo]);
+  const [completeSelect, setCompleteSelect] = useState(false);
 
   return (
     <div className="container">
-      <div className={styles.registerContainer}>
-        <div className={styles.registerTitle}>어떤 용도로 사용하시나요?</div>
-        <div>
-          <div className={styles.registerYongdoSelect}>
-            <div
-              className={styles.registerYongdoButton}
-              onClick={() => setYongdo('private')}
-            >
-              개인
-            </div>
-            <div
-              className={styles.registerYongdoButton}
-              onClick={() => setYongdo('company')}
-            >
-              기업
-            </div>
-          </div>
-        </div>
-      </div>
+      {!completeSelect ? (
+        <PurposeSelect
+          purpose={purpose}
+          setPurpose={setPurpose}
+          setCompleteSelect={setCompleteSelect}
+        />
+      ) : purpose ? (
+        <RegisterMain purpose={purpose} />
+      ) : null}
     </div>
   );
 };

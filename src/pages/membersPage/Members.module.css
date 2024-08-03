@@ -210,13 +210,76 @@
 /* 회원가입 */
 .registerContainer {
   display: flex;
+  flex-direction: column;
+  width: 90%;
 }
 
 .registerTitle {
-  font-size: 23px;
+  align-self: flex-start;
+  font-size: 25px;
   font-family: '나눔스퀘어볼드', 'sans-serif';
+  margin: 15% 0 15% 3%;
+
+  @media (max-width: 425px) {
+    font-size: 23px;
+  }
+  @media (max-width: 375px) {
+    font-size: 21px;
+  }
+  @media (max-width: 320px) {
+    font-size: 19px;
+  }
 }
 
-.registerYongdoButton {
+.registerPurposeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10% 0 30% 0;
+}
+
+.registerPurposeButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  margin: 0 3% 0 3%;
+  border: 1px solid #e2e5e2;
+  border-radius: 10px;
+  background: #e2e5e2;
   font-size: 23px;
+
+  @media (max-width: 425px) {
+    font-size: 21px;
+    height: 250px;
+  }
+  @media (max-width: 375px) {
+    font-size: 19px;
+    height: 200px;
+  }
+  @media (max-width: 320px) {
+    font-size: 17px;
+    height: 150px;
+  }
+}
+
+.registerPurposeImg {
+  height: 170px;
+  width: 170px;
+
+  @media (max-width: 425px) {
+    height: 130px;
+    width: 130px;
+  }
+  @media (max-width: 375px) {
+    height: 110px;
+    width: 110px;
+  }
+  @media (max-width: 320px) {
+    height: 90px;
+    width: 90px;
+  }
 }
