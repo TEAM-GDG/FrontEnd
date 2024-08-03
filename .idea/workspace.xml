@@ -7,11 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="이미지가왜자꾸깨지는것이니">
+    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="나를슬프게하는이미지크기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mainUtilPage/StatPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/StatPage/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +157,7 @@
       <workItem from="1722283882884" duration="29997000" />
       <workItem from="1722424878900" duration="14880000" />
       <workItem from="1722513350151" duration="25302000" />
-      <workItem from="1722601202503" duration="5206000" />
+      <workItem from="1722601202503" duration="5431000" />
     </task>
     <task id="LOCAL-00001" summary="협업 관련 설정">
       <option name="closed" value="true" />
@@ -425,7 +423,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722603211948</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="나를슬프게하는이미지크기">
+      <option name="closed" value="true" />
+      <created>1722654544011</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1722654544011</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,7 +439,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="감정 통계 페이지 작성" />
     <MESSAGE value="기록페이지 완성" />
     <MESSAGE value="Navbar 수정" />
     <MESSAGE value="미친 리드미 추가" />
@@ -458,6 +463,7 @@
     <MESSAGE value="뭔가했는데 기억안남;;" />
     <MESSAGE value="css 모듈 이것저것" />
     <MESSAGE value="이미지가왜자꾸깨지는것이니" />
-    <option name="LAST_COMMIT_MESSAGE" value="이미지가왜자꾸깨지는것이니" />
+    <MESSAGE value="나를슬프게하는이미지크기" />
+    <option name="LAST_COMMIT_MESSAGE" value="나를슬프게하는이미지크기" />
   </component>
 </project>
