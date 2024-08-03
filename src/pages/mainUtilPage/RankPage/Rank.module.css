@@ -1,0 +1,80 @@
+.rankContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.rankTopInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.rankTopInfoImg {
+  width: 50px;
+  height: 50px;
+}
+
+.rankTopInfoMaxPeople {
+  margin-top: 2%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #6e6e6e;
+}
+
+.rankTopInfoTopTen {
+  margin: 2% 0 6% 0;
+  font-family: '나눔스퀘어볼드', 'sans-serif';
+  font-size: 30px;
+  color: #6e6d6d;
+}
+
+.rankPurposeContainer {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.rankPurposeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2% 0 2%;
+  height: 40px;
+  width: 25%;
+  border: 1px solid #4c4c4c;
+  border-radius: 5px;
+  background: #e2e5e2;
+  font-size: 18px;
+}
+
+.rankViewContainer {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.rankView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.rankViewInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 2% 6% 2%;
+}
+
+.Title {
+  font-family: '나눔스퀘어볼드', 'sans-serif';
+}

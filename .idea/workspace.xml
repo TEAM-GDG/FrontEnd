@@ -7,14 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="2408040418">
-      <change afterPath="$PROJECT_DIR$/public/img/navIcon/active/mypage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/navIcon/inactive/mypage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/MyPage/index.js" afterDir="false" />
+    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="2408040434">
+      <change afterPath="$PROJECT_DIR$/public/img/crown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/RankPage/Rank.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/companyRanks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/privateRanks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mainUtilPage/CalPage/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mainUtilPage/RankPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/RankPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/posts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +163,7 @@
       <workItem from="1722283882884" duration="29997000" />
       <workItem from="1722424878900" duration="14880000" />
       <workItem from="1722513350151" duration="25302000" />
-      <workItem from="1722601202503" duration="30984000" />
+      <workItem from="1722601202503" duration="39633000" />
     </task>
     <task id="LOCAL-00001" summary="협업 관련 설정">
       <option name="closed" value="true" />
@@ -476,7 +477,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722712741727</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="2408040434">
+      <option name="closed" value="true" />
+      <created>1722713668433</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1722713668434</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="하트로 바꿈" />
     <MESSAGE value="뭔가 했음 이것저것" />
     <MESSAGE value="리듀서 기본 설정" />
     <MESSAGE value="아이콘 크기 수정" />
@@ -509,6 +517,7 @@
     <MESSAGE value="2408040002" />
     <MESSAGE value="2408040414" />
     <MESSAGE value="2408040418" />
-    <option name="LAST_COMMIT_MESSAGE" value="2408040418" />
+    <MESSAGE value="2408040434" />
+    <option name="LAST_COMMIT_MESSAGE" value="2408040434" />
   </component>
 </project>
