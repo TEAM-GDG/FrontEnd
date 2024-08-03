@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../../App.css';
-import './index.css';
+import styles from './Community.module.css';
+import { Link } from 'react-router-dom';
 
 const CommunityPage = () => {
   const posts = [
@@ -89,7 +90,17 @@ const CommunityPage = () => {
     },
     {
       post_id: 9,
-      title: '난 버스 탈거임',
+      title: '난 운전할거임',
+      image_path: null,
+      name: 'kingxeesu',
+      created_at: '9시간 전',
+      view_count: 481,
+      like_count: 59,
+      comment_count: 10,
+    },
+    {
+      post_id: 10,
+      title: '나는매일학교가는버스안에서',
       image_path: null,
       name: 'seo-garden',
       created_at: '9시간 전',
@@ -101,16 +112,16 @@ const CommunityPage = () => {
 
   return (
     <div className="container">
-      <div className="communityContainer m-b-30">
-        <div className="communityImageContainer">
+      <div className={styles.communityContainer + ' m-b-30'}>
+        <div>
           <img
-            className="communityImage"
-            src="communityIcon/tree.png"
+            className={styles.communityImage}
+            src="img/communityIcon/tree.png"
             alt="감정의숲"
           />
         </div>
-        <div className="communityAlignContainer">
-          <select className="communityAlignSelect">
+        <div className={styles.communityAlignContainer}>
+          <select className={styles.communityAlignSelect}>
             <option value="1">최신순</option>
             <option value="2">조회순</option>
             <option value="3">인기순</option>
@@ -118,11 +129,16 @@ const CommunityPage = () => {
         </div>
         <div className="horizon" />
         {posts.map(post => (
-          <div key={post.post_id} className="communityPostContainer">
-            <div className="communityPostInfoContainer">
-              <div className="communityPostInfoTitle">{post.title}</div>
+          <Link
+            to={`/community/${post.post_id}`}
+            key={post.post_id}
+            className={styles.communityPostContainer}
+            href={post.post_id}
+          >
+            <div className={styles.communityPostInfoContainer}>
+              <div className={styles.communityPostInfoTitle}>{post.title}</div>
               <div
-                className="communityPostInfoImage"
+                className={styles.communityPostInfoImage}
                 style={{
                   content: '',
                   background: post.image_path
@@ -131,26 +147,26 @@ const CommunityPage = () => {
                 }}
               />
             </div>
-            <div className="communityPostInfoContainer">
-              <div className="communityPostInfoDetail">
+            <div className={styles.communityPostInfoContainer}>
+              <div className={styles.communityPostInfoDetail}>
                 {post.name} ㆍ {post.created_at} ㆍ 조회 {post.view_count}
               </div>
-              <div className="communityPostInfoCount">
+              <div className={styles.communityPostInfoCount}>
                 <img
-                  className="communityPostInfoCountImage"
-                  src="communityIcon/like.png"
+                  className={styles.communityPostInfoCountImage}
+                  src="img/communityIcon/like.png"
                   alt="좋아요"
                 />
                 {post.like_count}
                 <img
-                  className="communityPostInfoCountImage m-l-15"
-                  src="communityIcon/reply.png"
+                  className={styles.communityPostInfoCountImage + ' m-l-15'}
+                  src="img/communityIcon/reply.png"
                   alt="댓글"
                 />
                 {post.comment_count}
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

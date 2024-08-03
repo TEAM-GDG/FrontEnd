@@ -1,127 +1,103 @@
 import React, { useEffect } from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
-const Navbar = ({ naviState, handleChangePage }) => {
+const Navbar = ({ naviState }) => {
+  let calImg = '/img/navIcon/inactive/cal.png';
+  let insightImg = '/img/navIcon/inactive/insight.png';
+  let homeImg = '/img/navIcon/inactive/home.png';
+  let communityImg = '/img/navIcon/inactive/community.png';
+  let rankImg = '/img/navIcon/inactive/rank.png';
+
   useEffect(() => {
     switch (naviState) {
       case 'cal':
-        document.getElementById('cal').src = 'navIcon/active/cal.png';
-        document.getElementById('insight').src = 'navIcon/inactive/insight.png';
-        document.getElementById('home').src = 'navIcon/inactive/home.png';
-        document.getElementById('community').src =
-          'navIcon/inactive/community.png';
-        document.getElementById('rank').src = 'navIcon/inactive/rank.png';
+        calImg = '/img/navIcon/active/cal.png';
+        insightImg = '/img/navIcon/inactive/insight.png';
+        homeImg = '/img/navIcon/inactive/home.png';
+        communityImg = '/img/navIcon/inactive/community.png';
+        rankImg = '/img/navIcon/inactive/rank.png';
         break;
       case 'insight':
-        document.getElementById('cal').src = 'navIcon/inactive/cal.png';
-        document.getElementById('insight').src = 'navIcon/active/insight.png';
-        document.getElementById('home').src = 'navIcon/inactive/home.png';
-        document.getElementById('community').src =
-          'navIcon/inactive/community.png';
-        document.getElementById('rank').src = 'navIcon/inactive/rank.png';
+        calImg = '/img/navIcon/inactive/cal.png';
+        insightImg = '/img/navIcon/active/insight.png';
+        homeImg = '/img/navIcon/inactive/home.png';
+        communityImg = '/img/navIcon/inactive/community.png';
+        rankImg = '/img/navIcon/inactive/rank.png';
         break;
       case '/':
-        document.getElementById('cal').src = 'navIcon/inactive/cal.png';
-        document.getElementById('insight').src = 'navIcon/inactive/insight.png';
-        document.getElementById('home').src = 'navIcon/active/home.png';
-        document.getElementById('community').src =
-          'navIcon/inactive/community.png';
-        document.getElementById('rank').src = 'navIcon/inactive/rank.png';
+        calImg = '/img/navIcon/inactive/cal.png';
+        insightImg = '/img/navIcon/inactive/insight.png';
+        homeImg = '/img/navIcon/active/home.png';
+        communityImg = '/img/navIcon/inactive/community.png';
+        rankImg = '/img/navIcon/inactive/rank.png';
         break;
       case 'community':
-        document.getElementById('cal').src = 'navIcon/inactive/cal.png';
-        document.getElementById('insight').src = 'navIcon/inactive/insight.png';
-        document.getElementById('home').src = 'navIcon/inactive/home.png';
-        document.getElementById('community').src =
-          'navIcon/active/community.png';
-        document.getElementById('rank').src = 'navIcon/inactive/rank.png';
+        calImg = '/img/navIcon/inactive/cal.png';
+        insightImg = '/img/navIcon/inactive/insight.png';
+        homeImg = '/img/navIcon/inactive/home.png';
+        communityImg = '/img/navIcon/active/community.png';
+        rankImg = '/img/navIcon/inactive/rank.png';
         break;
       case 'rank':
-        document.getElementById('cal').src = 'navIcon/inactive/cal.png';
-        document.getElementById('insight').src = 'navIcon/inactive/insight.png';
-        document.getElementById('home').src = 'navIcon/inactive/home.png';
-        document.getElementById('community').src =
-          'navIcon/inactive/community.png';
-        document.getElementById('rank').src = 'navIcon/active/rank.png';
+        calImg = '/img/navIcon/inactive/cal.png';
+        insightImg = '/img/navIcon/inactive/insight.png';
+        homeImg = '/img/navIcon/inactive/home.png';
+        communityImg = '/img/navIcon/inactive/community.png';
+        rankImg = '/img/navIcon/active/rank.png';
         break;
       default:
-        document.getElementById('cal').src = 'navIcon/inactive/cal.png';
-        document.getElementById('insight').src = 'navIcon/inactive/insight.png';
-        document.getElementById('home').src = 'navIcon/inactive/home.png';
-        document.getElementById('community').src =
-          'navIcon/inactive/community.png';
-        document.getElementById('rank').src = 'navIcon/inactive/rank.png';
+        calImg = '/img/navIcon/inactive/cal.png';
+        insightImg = '/img/navIcon/inactive/insight.png';
+        homeImg = '/img/navIcon/inactive/home.png';
+        communityImg = '/img/navIcon/inactive/community.png';
+        rankImg = '/img/navIcon/inactive/rank.png';
         break;
     }
-  }, [naviState]);
+  }, [naviState, calImg, insightImg, homeImg, communityImg, rankImg]);
 
   return (
     <div className="navbar">
-      <a
-        href="cal"
-        className="navbar__box"
-        onClick={e => handleChangePage(e, `cal`)}
-      >
+      <Link to="cal" className="navbar__box">
         <img
           id="cal"
           className="navbar__box__button"
-          src="navIcon/inactive/cal.png"
+          src={calImg}
           alt="캘린더"
         />
         <span className="navbar__box__text">챌린지</span>
-      </a>
-      <a
-        href="insight"
-        className="navbar__box"
-        onClick={e => handleChangePage(e, `insight`)}
-      >
+      </Link>
+      <Link to="insight" className="navbar__box">
         <img
           id="insight"
           className="navbar__box__button"
-          src="navIcon/inactive/insight.png"
+          src={insightImg}
           alt="통계"
         />
         <span className="navbar__box__text">통계</span>
-      </a>
-      <a
-        href="/"
-        className="navbar__box"
-        onClick={e => handleChangePage(e, `/`)}
-      >
-        <img
-          id="home"
-          className="navbar__box__button"
-          src="navIcon/inactive/home.png"
-          alt="홈"
-        />
+      </Link>
+      <Link to="/" className="navbar__box">
+        <img id="home" className="navbar__box__button" src={homeImg} alt="홈" />
         <span className="navbar__box__text">홈</span>
-      </a>
-      <a
-        href="community"
-        className="navbar__box"
-        onClick={e => handleChangePage(e, `community`)}
-      >
+      </Link>
+      <Link to="community" className="navbar__box">
         <img
           id="community"
           className="navbar__box__button"
-          src="navIcon/inactive/community.png"
+          src={communityImg}
           alt="커뮤니티"
         />
         <span className="navbar__box__text">커뮤니티</span>
-      </a>
-      <a
-        href="rank"
-        className="navbar__box"
-        onClick={e => handleChangePage(e, `rank`)}
-      >
+      </Link>
+      <Link to="rank" className="navbar__box">
         <img
           id="rank"
           className="navbar__box__button"
-          src="navIcon/inactive/rank.png"
+          src={rankImg}
           alt="랭킹"
         />
         <span className="navbar__box__text">랭킹</span>
-      </a>
+      </Link>
     </div>
   );
 };

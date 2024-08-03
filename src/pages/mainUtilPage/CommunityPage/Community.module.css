@@ -1,0 +1,107 @@
+.communityContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+}
+
+.communityImage {
+  width: 100px;
+  height: 100px;
+}
+
+.communityAlignContainer {
+  display: flex;
+  margin: 0 auto 0 2px;
+}
+
+.communityAlignSelect {
+  background-color: inherit;
+  border: none;
+  font-family: '나눔스퀘어', 'sans-serif';
+}
+
+.communityPostContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  background-color: #E2E5E2;
+  margin: 2% 0 2% 0;
+  padding: 0 2px 0 2px;
+  border-radius: 5px;
+  font-family: '나눔스퀘어', 'sans-serif';
+  color: #4c4c4c;
+}
+
+.communityPostInfoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.communityPostInfoTitle {
+  margin: 0 0 1% 3%;
+  font-size: 17px;
+
+  @media (max-width: 425px) {
+    font-size: 16px;
+  }
+  @media (max-width: 375px) {
+    font-size: 15px;
+  }
+  @media (max-width: 320px) {
+    font-size: 14px;
+  }
+}
+
+.communityPostInfoImage {
+  margin: 0 3% 1% 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.communityPostInfoDetail {
+  margin-left: 3%;
+  color: #828282;
+  font-size: 13px;
+
+  @media (max-width: 425px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 11px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 10px;
+  }
+}
+
+.communityPostInfoCount {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 3%;
+  color: #828282;
+  font-size: 13px;
+
+  @media (max-width: 425px) {
+    font-size: 12px;
+  }
+  @media (max-width: 375px) {
+    font-size: 11px;
+  }
+  @media (max-width: 320px) {
+    font-size: 10px;
+  }
+}
+
+.communityPostInfoCountImage {
+  width: 15px;
+  height: 15px;
+}

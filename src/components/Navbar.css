@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     background-color: #000;
+    font-family: '나눔스퀘어', 'sans-serif';
 }
 
 .navbar__box {

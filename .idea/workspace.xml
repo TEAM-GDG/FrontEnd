@@ -7,10 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="커뮤니티 다했다">
+    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="이미지가왜자꾸깨지는것이니">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/membersPage/FindIdPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/FindIdPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/membersPage/FindPwdPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/membersPage/FindPwdPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -86,44 +87,44 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "55yong",
-    "last_opened_file_path": "/Users/55yong/Documents/likelion/likelion-competition/hackerton/gdg-front/public",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/Users/55yong/.nvm/versions/node/v20.12.1/bin/node",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/55yong/Documents/likelion/likelion-competition/hackerton/gdg-front/node_modules/prettier",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "/Users/55yong/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;55yong&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/55yong/Documents/likelion/likelion-competition/hackerton/gdg-front/public/img&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/Users/55yong/.nvm/versions/node/v20.12.1/bin/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/55yong/Documents/likelion/likelion-competition/hackerton/gdg-front/node_modules/prettier&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/55yong/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/public/communityIcon" />
-      <recent name="$PROJECT_DIR$/public/fonts/ygJalnan" />
+      <recent name="$PROJECT_DIR$/public/img" />
+      <recent name="$PROJECT_DIR$/public/fonts/KoPubDotum" />
       <recent name="$PROJECT_DIR$/public/fonts/NanumSquare" />
-      <recent name="$PROJECT_DIR$/public/fonts/NanumPen" />
+      <recent name="$PROJECT_DIR$/public/fonts" />
+      <recent name="$PROJECT_DIR$/public/communityIcon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public/communityIcon" />
       <recent name="$PROJECT_DIR$/src/pages/etcPage" />
       <recent name="$PROJECT_DIR$/src/pages/subUtilPage" />
-      <recent name="$PROJECT_DIR$/src/pages/members" />
-      <recent name="$PROJECT_DIR$/src/pages/mainUtility" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -156,7 +157,9 @@
       <workItem from="1722279936299" duration="2655000" />
       <workItem from="1722282764948" duration="1092000" />
       <workItem from="1722283882884" duration="29997000" />
-      <workItem from="1722424878900" duration="14599000" />
+      <workItem from="1722424878900" duration="14880000" />
+      <workItem from="1722513350151" duration="25302000" />
+      <workItem from="1722601202503" duration="5206000" />
     </task>
     <task id="LOCAL-00001" summary="협업 관련 설정">
       <option name="closed" value="true" />
@@ -382,7 +385,47 @@
       <option name="project" value="LOCAL" />
       <updated>1722441878634</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="커뮤니티 다했다2">
+      <option name="closed" value="true" />
+      <created>1722442158426</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1722442158426</updated>
+    </task>
+    <task id="LOCAL-00030" summary="커뮤니티 다했다3">
+      <option name="closed" value="true" />
+      <created>1722442247653</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1722442247653</updated>
+    </task>
+    <task id="LOCAL-00031" summary="뭔가했는데 기억안남;;">
+      <option name="closed" value="true" />
+      <created>1722530783588</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1722530783589</updated>
+    </task>
+    <task id="LOCAL-00032" summary="css 모듈 이것저것">
+      <option name="closed" value="true" />
+      <created>1722531653535</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1722531653535</updated>
+    </task>
+    <task id="LOCAL-00033" summary="이미지가왜자꾸깨지는것이니">
+      <option name="closed" value="true" />
+      <created>1722603211944</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1722603211948</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,11 +433,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="컴포넌트 이름 변경" />
-    <MESSAGE value="아니뭐안쓰는컴포넌트있다고빌드오류를내냐개열받게하네" />
-    <MESSAGE value="또 메인 브랜치에서 하고있었음 ㅋㅅㅋ" />
-    <MESSAGE value="600px로 고정하고 테스트 위한 적절한 설정 완료" />
-    <MESSAGE value="미친 반응형 완료" />
     <MESSAGE value="감정 통계 페이지 작성" />
     <MESSAGE value="기록페이지 완성" />
     <MESSAGE value="Navbar 수정" />
@@ -415,6 +453,11 @@
     <MESSAGE value="무서운 CSS" />
     <MESSAGE value="무서운 폰트" />
     <MESSAGE value="커뮤니티 다했다" />
-    <option name="LAST_COMMIT_MESSAGE" value="커뮤니티 다했다" />
+    <MESSAGE value="커뮤니티 다했다2" />
+    <MESSAGE value="커뮤니티 다했다3" />
+    <MESSAGE value="뭔가했는데 기억안남;;" />
+    <MESSAGE value="css 모듈 이것저것" />
+    <MESSAGE value="이미지가왜자꾸깨지는것이니" />
+    <option name="LAST_COMMIT_MESSAGE" value="이미지가왜자꾸깨지는것이니" />
   </component>
 </project>

@@ -1,16 +1,17 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <div className="footer">
       <span>© 2024 GDG ALL RIGHTS RESERVED</span>
-      <a href="https://www.likelionync.shop" className="underline">
+      <Link to="/" className="underline">
         개인정보처리방침
-      </a>
-      <a href="https://www.likelionync.shop" className="underline">
+      </Link>
+      <Link to="/" className="underline">
         이용약관
-      </a>
+      </Link>
       <span>FE : 오용준 홍가영</span>
       <span>BE : 김도훈 한상희 노기봉 정희수</span>
       <div className="footer__contacts">

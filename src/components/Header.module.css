@@ -1,0 +1,121 @@
+.header {
+  font-family: "나눔스퀘어", "sans-serif";
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 60px;
+  margin: 0 auto;
+  z-index: 100;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: rgba(128, 128, 128, 0.37);
+  background: #F2F2F2;
+}
+
+.headerPointsContainer {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: left;
+  height: 100%;
+  width: 33%;
+}
+
+.headerPointsImg {
+  margin-left: 10%;
+  height: 30px;
+  width: 30px;
+
+  @media (max-width: 425px) {
+    height: 28px;
+    width: 28px;
+  }
+  @media (max-width: 375px) {
+    height: 24px;
+    width: 24px;
+  }
+  @media (max-width: 320px) {
+    height: 22px;
+    width: 22px;
+  }
+}
+
+.headerPointsText {
+  font-family: "나눔스퀘어", "sans-serif";
+  font-size: 13px;
+  color: #afa12b;
+  font-weight: 100;
+
+  @media (max-width: 425px) {
+    font-size: 12px;
+  }
+  @media (max-width: 375px) {
+    font-size: 11px;
+  }
+  @media (max-width: 320px) {
+    font-size: 10px;
+  }
+}
+
+.headerTitleContainer {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 33%;
+}
+
+.headerTitleImg {
+  height: 80px;
+  width: 80px;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media(max-width: 425px) {
+    height: 75px;
+    width: 75px;
+  }
+
+  @media(max-width: 375px) {
+    height: 70px;
+    width: 70px;
+  }
+
+  @media(max-width: 320px) {
+    height: 65px;
+    width: 65px;
+  }
+}
+
+.headerCommunityContainer {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: right;
+  height: 100%;
+  width: 33%;
+}
+
+.headerCommunityImg {
+  height: 30px;
+  width: 30px;
+
+  @media (max-width: 425px) {
+    height: 28px;
+    width: 28px;
+  }
+  @media (max-width: 375px) {
+    height: 24px;
+    width: 24px;
+  }
+  @media (max-width: 320px) {
+    height: 22px;
+    width: 22px;
+  }
+}
