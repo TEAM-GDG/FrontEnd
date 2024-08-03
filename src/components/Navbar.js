@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import './Navbar.css';
+import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = ({ naviState }) => {
@@ -57,51 +57,51 @@ const Navbar = ({ naviState }) => {
   }, [naviState, calImg, insightImg, homeImg, communityImg, rankImg]);
 
   return (
-    <div className="navbar">
-      <Link to="cal" className="navbar__box">
+    <div className={styles.navbar}>
+      <Link to="cal" className={styles.navbarContainer}>
         <img
           id="cal"
-          className="navbar__box__button"
+          className={styles.navbarButton}
           src={calImg.current}
           alt="캘린더"
         />
-        <span className="navbar__box__text">챌린지</span>
+        <span className={styles.navbarText}>챌린지</span>
       </Link>
-      <Link to="insight" className="navbar__box">
+      <Link to="insight" className={styles.navbarContainer}>
         <img
           id="insight"
-          className="navbar__box__button"
+          className={styles.navbarButton}
           src={insightImg.current}
           alt="통계"
         />
-        <span className="navbar__box__text">통계</span>
+        <span className={styles.navbarText}>통계</span>
       </Link>
-      <Link to="/" className="navbar__box">
+      <Link to="/" className={styles.navbarContainer}>
         <img
           id="home"
-          className="navbar__box__button"
+          className={styles.navbarButton}
           src={homeImg.current}
           alt="홈"
         />
-        <span className="navbar__box__text">홈</span>
+        <span className={styles.navbarText}>홈</span>
       </Link>
-      <Link to="community" className="navbar__box">
+      <Link to="community" className={styles.navbarContainer}>
         <img
           id="community"
-          className="navbar__box__button"
+          className={styles.navbarButton}
           src={communityImg.current}
           alt="커뮤니티"
         />
-        <span className="navbar__box__text">커뮤니티</span>
+        <span className={styles.navbarText}>커뮤니티</span>
       </Link>
-      <Link to="rank" className="navbar__box">
+      <Link to="rank" className={styles.navbarContainer}>
         <img
           id="rank"
-          className="navbar__box__button"
+          className={styles.navbarButton}
           src={rankImg.current}
           alt="랭킹"
         />
-        <span className="navbar__box__text">랭킹</span>
+        <span className={styles.navbarText}>랭킹</span>
       </Link>
     </div>
   );

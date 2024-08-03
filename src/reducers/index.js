@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import clickCommunityPage from './clickCommunityPage';
+import isLogin from './isLogin';
+import posts from './posts';
 
 const rootReducer = combineReducers({
-  clickCommunityPage: clickCommunityPage,
+  isLogin: isLogin,
+  posts: posts,
 });
 
 export default rootReducer;

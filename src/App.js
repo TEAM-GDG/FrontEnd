@@ -16,6 +16,8 @@ import FindIdPage from './pages/membersPage/FindIdPage';
 import FindPwdPage from './pages/membersPage/FindPwdPage';
 import ChangePwdPage from './pages/membersPage/ChangePwdPage';
 import CommunityPostPage from './pages/subUtilPage/CommunityPostPage';
+import CommunitySearchPage from './pages/subUtilPage/CommunitySearchPage';
+import CommunityWritePage from './pages/subUtilPage/CommunityWritePage';
 
 const Layout = ({ location, isMembersPage }) => {
   return (
@@ -28,7 +30,7 @@ const Layout = ({ location, isMembersPage }) => {
   );
 };
 
-const App = React.memo(({ value, onClickCommunityPage }) => {
+const App = React.memo(() => {
   const [isMembersPage, setIsMembersPage] = useState(false);
 
   let location = useLocation();
@@ -56,15 +58,9 @@ const App = React.memo(({ value, onClickCommunityPage }) => {
         {/* 커뮤니티 */}
         <Route path="community">
           <Route index element={<CommunityPage />} />
-          <Route
-            path=":post_id"
-            element={
-              <CommunityPostPage
-                value={value}
-                onClickCommunityPage={onClickCommunityPage}
-              />
-            }
-          />
+          <Route path=":post_id" element={<CommunityPostPage />} />
+          <Route path="search" element={<CommunitySearchPage />} />
+          <Route path="write" element={<CommunityWritePage />} />
         </Route>
 
         {/* 랭킹 */}

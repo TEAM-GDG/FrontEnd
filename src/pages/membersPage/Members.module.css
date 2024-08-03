@@ -9,7 +9,6 @@
   margin-bottom: 30%;
   font-family: '나눔스퀘어', 'sans-serif';
   font-size: 15px;
-  color: #bbbbbb;
 
   @media (max-width: 425px) {
     font-size: 14px;
@@ -194,7 +193,7 @@
   border: 1px solid #bbbbbb;
   background-color: #fff;
   font-family: '나눔스퀘어', 'sans-serif';
-  color: #bbbbbb;
+  color: #7c7c7c;
   font-size: 15px;
 
   @media (max-width: 425px) {
@@ -206,4 +205,18 @@
   @media (max-width: 320px) {
     font-size: 12px;
   }
+}
+
+/* 회원가입 */
+.registerContainer {
+  display: flex;
+}
+
+.registerTitle {
+  font-size: 23px;
+  font-family: '나눔스퀘어볼드', 'sans-serif';
+}
+
+.registerYongdoButton {
+  font-size: 23px;
 }
