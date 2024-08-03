@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="나를슬프게하는이미지크기">
+    <list default="true" id="5ae4f0c8-ad7d-406a-ab6f-9bd566df2377" name="변경" comment="커밋을 할 때에는 반드시 모든것을확인합시다">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mainUtilPage/StatPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mainUtilPage/StatPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +157,7 @@
       <workItem from="1722283882884" duration="29997000" />
       <workItem from="1722424878900" duration="14880000" />
       <workItem from="1722513350151" duration="25302000" />
-      <workItem from="1722601202503" duration="5431000" />
+      <workItem from="1722601202503" duration="5784000" />
     </task>
     <task id="LOCAL-00001" summary="협업 관련 설정">
       <option name="closed" value="true" />
@@ -431,7 +431,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722654544011</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="커밋을 할 때에는 반드시 모든것을확인합시다">
+      <option name="closed" value="true" />
+      <created>1722654697823</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1722654697823</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +447,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="기록페이지 완성" />
     <MESSAGE value="Navbar 수정" />
     <MESSAGE value="미친 리드미 추가" />
     <MESSAGE value="리팩토링좀 하구요 ㅎ" />
@@ -464,6 +471,7 @@
     <MESSAGE value="css 모듈 이것저것" />
     <MESSAGE value="이미지가왜자꾸깨지는것이니" />
     <MESSAGE value="나를슬프게하는이미지크기" />
-    <option name="LAST_COMMIT_MESSAGE" value="나를슬프게하는이미지크기" />
+    <MESSAGE value="커밋을 할 때에는 반드시 모든것을확인합시다" />
+    <option name="LAST_COMMIT_MESSAGE" value="커밋을 할 때에는 반드시 모든것을확인합시다" />
   </component>
 </project>
