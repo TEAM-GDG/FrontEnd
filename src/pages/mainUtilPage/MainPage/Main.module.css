@@ -1,0 +1,163 @@
+.topInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 6% 0 6% 0;
+  font-family: '나눔스퀘어라이트', sans-serif;
+}
+
+.topInfo > * {
+  margin-top: 3px;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2% 0 auto;
+}
+
+.profileImage {
+  width: 50px;
+  height: 50px;
+  margin: 3% 0 3% auto;
+
+  @media  (max-width: 425px) {
+    width: 40px;
+    height: 40px;
+  }
+  @media  (max-width: 375px) {
+    width: 35px;
+    height: 35px;
+  }
+  @media  (max-width: 320px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.nickname {
+  font-size: 18px;
+  margin: 3% 2% 3% auto;
+  width: 100%;
+
+  @media (max-width: 425px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 14px;
+  }
+}
+
+.recordTimeText {
+  font-size: 22px;
+  margin: 0 2% 0 auto;
+
+  @media (max-width: 425px) {
+    font-size: 19px;
+  }
+  @media (max-width: 320px) {
+    font-size: 17px;
+  }
+}
+
+.recordTimeTextDate {
+  font-family: '나눔스퀘어볼드', 'sans-serif';
+}
+
+.emotionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 30%;
+}
+
+.heart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: '여기어때잘난체', 'sans-serif';
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #899a82;
+  -webkit-text-stroke: 1px #fff;
+  background-image: url('../../../../public/img/heart.png');
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+
+  @media (max-width: 425px) {
+    width: 250px;
+    height: 250px;
+    font-size: 28px;
+  }
+
+  @media (max-width: 320px) {
+    width: 200px;
+    height: 200px;
+    font-size: 24px;
+  }
+}
+
+.heartInText {
+  font-size: 32px;
+
+  @media (max-width: 425px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 24px;
+  }
+}
+
+.heartInTextPercent {
+  z-index: 5;
+  margin-top: -2%;
+  margin-bottom: 5%;
+  font-size: 32px;
+
+  @media (max-width: 425px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 24px;
+  }
+}
+
+.emotionTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emotionText {
+  width: 100%;
+  font-size: 23px;
+
+  @media (max-width: 425px) {
+    font-size: 21px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 19px;
+  }
+}
+
+.emotionSmallText {
+  color: #B8B8B8;
+  margin-top: 3%;
+  font-size: 17px;
+
+  @media (max-width: 425px) {
+    font-size: 15px;
+  }
+  @media (max-width: 320px) {
+    font-size: 13px;
+  }
+}

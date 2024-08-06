@@ -1,27 +1,77 @@
-@import url('//fonts.googleapis.com/earlyaccess/nanumpenscript.css');
-
 @font-face {
-  font-family: 'NanumBarunpen';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+  font-family: '나눔스퀘어라이트';
+  src: url('/public/fonts/NanumSquare/NanumSquareLt.otf');
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: '나눔스퀘어';
+  src: url('/public/fonts/NanumSquare/NanumSquareRg.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '나눔스퀘어볼드';
+  src: url('/public/fonts/NanumSquare/NanumSquareBd.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPub돋움';
+  src: url('/public/fonts/KoPubDotum/KoPubDotumRg.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPub돋움볼드';
+  src: url('/public/fonts/KoPubDotum/KoPubDotumBd.otf');
+}
+
+@font-face {
+  font-family: '지마켓라이트';
+  src: url('/public/fonts/GmarketSansOTF/GmarketSansLight.otf');
+}
+
+@font-face {
+  font-family: '지마켓';
+  src: url('/public/fonts/GmarketSansOTF/GmarketSansMedium.otf');
+}
+
+@font-face {
+  font-family: '지마켓볼드';
+  src: url('/public/fonts/GmarketSansOTF/GmarketSansBold.otf');
+}
+
+@font-face {
+  font-family: '여기어때잘난체';
+  src: url('../public/fonts/ygJalnan/Jalnan.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  color: #4C4C4C;
+}
+
 body {
   max-width: 600px;
-  min-height: 100vh;
   margin: 0 auto;
   border: 1px solid rgba(128, 128, 128, 0.37);
   background-color: #FFFEF6;
+
 }
 
 a {
-  color: #000;
+  color: #4C4C4C;
   text-decoration: none;
   outline: none;
 }
 
 a:hover, a:active {
+  color: #4C4C4C;
   text-decoration: none;
-  color: #000;
 }

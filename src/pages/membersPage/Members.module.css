@@ -1,0 +1,285 @@
+@import url('../../App.css');
+
+/* 공통 컴포넌트 CSS */
+.membersContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 30%;
+  font-family: '나눔스퀘어', 'sans-serif';
+  font-size: 15px;
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+  @media (max-width: 375px) {
+    font-size: 13px;
+  }
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+}
+
+.membersForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.membersTextInput {
+  width: 100%;
+  height: 40px;
+  margin: 2% 0 2% 0;
+  padding-left: 2%;
+  border-radius: 40px;
+  border: 1px solid #bbbbbb;
+  font-family: '나눔스퀘어', 'sans-serif';
+  font-size: 15px;
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+  @media (max-width: 375px) {
+    font-size: 13px;
+  }
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+}
+
+.membersSubmitButton {
+  width: 100%;
+  height: 40px;
+  margin: 2% 0 2% 0;
+  border-radius: 40px;
+  border: 1px solid #adc3a5;
+  background-color: #adc3a5;
+  font-family: '나눔스퀘어', 'sans-serif';
+  font-size: 15px;
+  color: #fff;
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+  @media (max-width: 375px) {
+    font-size: 13px;
+  }
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+}
+
+.membersUtilityContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5% 0 5% 0;
+  color: #bbbbbb;
+  font-family: '나눔스퀘어', 'sans-serif';
+}
+
+.membersUtilityButton {
+  margin: 0 2% 0 2%;
+  font-size: 13px;
+  font-family: '나눔스퀘어', 'sans-serif';
+  color: #bbbbbb;
+
+  @media (max-width: 425px) {
+    font-size: 12px;
+  }
+  @media (max-width: 375px) {
+    font-size: 11px;
+  }
+  @media (max-width: 320px) {
+    font-size: 10px;
+  }
+}
+
+/* 로그인 컴포넌트 CSS */
+.loginTitle {
+  height: 320px;
+  width: 320px;
+  color: #f4f5ff;
+
+  @media (max-width: 425px) {
+    height: 270px;
+    width: 270px;
+  }
+  @media (max-width: 375px) {
+    height: 220px;
+    width: 220px;
+  }
+  @media (max-width: 320px) {
+    height: 170px;
+    width: 170px;
+  }
+}
+
+.loginBoxInputContainer {
+  width: 100%;
+  margin: 2% auto 2% 0;
+  font-family: '나눔스퀘어', 'sans-serif';
+}
+
+.loginBoxInput {
+  border-radius: 50%;
+}
+
+.loginBoxInputLabel {
+  font-family: '나눔스퀘어', 'sans-serif';
+  font-size: 15px;
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+  @media (max-width: 375px) {
+    font-size: 13px;
+  }
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+}
+
+.loginSocialContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 2% 0 5% 0;
+}
+
+.loginSocialBox {
+  margin: 0 2% 0 2%;
+}
+
+.loginSocialImage {
+  width: 40px;
+  height: 40px;
+}
+
+/* 이메일, 비밀번호 찾기 컴포넌트 CSS */
+.findTitle {
+  font-size: 23px;
+  font-family: '나눔스퀘어볼드', 'sans-serif';
+  margin-top: 15%;
+  margin-bottom: 10%;
+
+  @media (max-width: 425px) {
+    font-size: 22px;
+  }
+  @media (max-width: 375px) {
+    font-size: 21px;
+  }
+  @media (max-width: 320px) {
+    font-size: 20px;
+  }
+}
+
+.findAuthContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 103%;
+}
+
+.findAuthButton {
+  width: 30%;
+  height: 43px;
+  margin: 2% 0 2% 2%;
+  border-radius: 40px;
+  border: 1px solid #bbbbbb;
+  background-color: #fff;
+  font-family: '나눔스퀘어', 'sans-serif';
+  color: #7c7c7c;
+  font-size: 15px;
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+  @media (max-width: 375px) {
+    font-size: 13px;
+  }
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+}
+
+/* 회원가입 */
+.registerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.registerTitle {
+  align-self: flex-start;
+  font-size: 25px;
+  font-family: '나눔스퀘어볼드', 'sans-serif';
+  margin: 15% 0 15% 3%;
+
+  @media (max-width: 425px) {
+    font-size: 23px;
+  }
+  @media (max-width: 375px) {
+    font-size: 21px;
+  }
+  @media (max-width: 320px) {
+    font-size: 19px;
+  }
+}
+
+.registerPurposeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10% 0 30% 0;
+}
+
+.registerPurposeButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  margin: 0 3% 0 3%;
+  border: 1px solid #e2e5e2;
+  border-radius: 10px;
+  background: #e2e5e2;
+  font-size: 23px;
+
+  @media (max-width: 425px) {
+    font-size: 21px;
+    height: 250px;
+  }
+  @media (max-width: 375px) {
+    font-size: 19px;
+    height: 200px;
+  }
+  @media (max-width: 320px) {
+    font-size: 17px;
+    height: 150px;
+  }
+}
+
+.registerPurposeImg {
+  height: 170px;
+  width: 170px;
+
+  @media (max-width: 425px) {
+    height: 130px;
+    width: 130px;
+  }
+  @media (max-width: 375px) {
+    height: 110px;
+    width: 110px;
+  }
+  @media (max-width: 320px) {
+    height: 90px;
+    width: 90px;
+  }
+}

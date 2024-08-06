@@ -1,0 +1,121 @@
+.rankContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.rankTopInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.rankTopInfoImg {
+  width: 50px;
+  height: 50px;
+}
+
+.rankTopInfoMaxPeople {
+  margin-top: 2%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #6e6e6e;
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+  @media (max-width: 375px) {
+    font-size: 13px;
+  }
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+}
+
+.rankTopInfoTopTen {
+  margin: 2% 0 6% 0;
+  font-family: '나눔스퀘어볼드', 'sans-serif';
+  font-size: 30px;
+  color: #6e6d6d;
+
+  @media (max-width: 425px) {
+    font-size: 25px;
+  }
+  @media (max-width: 375px) {
+    font-size: 20px;
+  }
+  @media (max-width: 320px) {
+    font-size: 18px;
+  }
+}
+
+.rankPurposeContainer {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.rankPurposeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2% 0 2%;
+  height: 40px;
+  width: 25%;
+  border-radius: 5px;
+  background: #e2e5e2;
+  font-size: 18px;
+  font-family: '나눔스퀘어볼드', 'sans-serif';
+
+  @media (max-width: 425px) {
+    font-size: 17px;
+  }
+  @media (max-width: 375px) {
+    font-size: 16px;
+  }
+  @media (max-width: 320px) {
+    font-size: 15px;
+  }
+}
+
+.rankViewContainer {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.rankView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.rankViewInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 2% 6% 2%;
+  font-size: 18px;
+
+  @media (max-width: 425px) {
+    font-size: 13px;
+  }
+  @media (max-width: 375px) {
+    font-size: 12px;
+  }
+  @media (max-width: 320px) {
+    font-size: 10px;
+  }
+}
+
+.Title {
+  font-family: '나눔스퀘어볼드', 'sans-serif';
+}

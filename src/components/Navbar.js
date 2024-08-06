@@ -1,58 +1,110 @@
-import React from 'react';
-import './Navbar.css';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useRef } from 'react';
+import styles from './Navbar.module.css';
+import { Link } from 'react-router-dom';
 
-const Navbar = () => {
-  let navigate = useNavigate();
+const Navbar = ({ naviState }) => {
+  let rankImg = useRef('/img/navIcon/inactive/rank.png');
+  let insightImg = useRef('/img/navIcon/inactive/insight.png');
+  let homeImg = useRef('/img/navIcon/inactive/home.png');
+  let communityImg = useRef('/img/navIcon/inactive/community.png');
+  let myPageImg = useRef('/img/navIcon/inactive/mypage.png');
 
-  const handleClick = (e, location) => {
-    e.preventDefault();
-    navigate(location);
-    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
-  };
+  useEffect(() => {
+    switch (naviState) {
+      case 'rank':
+        insightImg.current = '/img/navIcon/inactive/insight.png';
+        homeImg.current = '/img/navIcon/inactive/home.png';
+        communityImg.current = '/img/navIcon/inactive/community.png';
+        rankImg.current = '/img/navIcon/active/rank.png';
+        myPageImg.current = '/img/navIcon/inactive/mypage.png';
+        break;
+
+      case 'insight':
+        insightImg.current = '/img/navIcon/active/insight.png';
+        homeImg.current = '/img/navIcon/inactive/home.png';
+        communityImg.current = '/img/navIcon/inactive/community.png';
+        rankImg.current = '/img/navIcon/inactive/rank.png';
+        myPageImg.current = '/img/navIcon/inactive/mypage.png';
+        break;
+      case '/':
+        insightImg.current = '/img/navIcon/inactive/insight.png';
+        homeImg.current = '/img/navIcon/active/home.png';
+        communityImg.current = '/img/navIcon/inactive/community.png';
+        rankImg.current = '/img/navIcon/inactive/rank.png';
+        myPageImg.current = '/img/navIcon/inactive/mypage.png';
+        break;
+      case 'community':
+        insightImg.current = '/img/navIcon/inactive/insight.png';
+        homeImg.current = '/img/navIcon/inactive/home.png';
+        communityImg.current = '/img/navIcon/active/community.png';
+        rankImg.current = '/img/navIcon/inactive/rank.png';
+        myPageImg.current = '/img/navIcon/inactive/mypage.png';
+        break;
+      case 'mypage':
+        insightImg.current = '/img/navIcon/inactive/insight.png';
+        homeImg.current = '/img/navIcon/inactive/home.png';
+        communityImg.current = '/img/navIcon/inactive/community.png';
+        rankImg.current = '/img/navIcon/inactive/rank.png';
+        myPageImg.current = '/img/navIcon/active/mypage.png';
+        break;
+      default:
+        insightImg.current = '/img/navIcon/inactive/insight.png';
+        homeImg.current = '/img/navIcon/inactive/home.png';
+        communityImg.current = '/img/navIcon/inactive/community.png';
+        rankImg.current = '/img/navIcon/inactive/rank.png';
+        myPageImg.current = '/img/navIcon/inactive/mypage.png';
+        break;
+    }
+  }, [naviState, insightImg, homeImg, communityImg, rankImg, myPageImg]);
 
   return (
-    <div className="navbar">
-      <a
-        href="cal"
-        className="navbar__box"
-        onClick={e => handleClick(e, `cal`)}
-      >
-        <img className="navbar__box__button" src="cal.png" alt="캘린더" />
-        <span className="navbar__box__text">캘린더</span>
-      </a>
-      <a
-        href="insight"
-        className="navbar__box"
-        onClick={e => handleClick(e, `insight`)}
-      >
-        <img className="navbar__box__button" src="insight.png" alt="통계" />
-        <span className="navbar__box__text">통계</span>
-      </a>
-      <a href="/" className="navbar__box" onClick={e => handleClick(e, `/`)}>
-        <img className="navbar__box__button" src="home.png" alt="홈" />
-        <span className="navbar__box__text">홈</span>
-      </a>
-      <a
-        href="community"
-        className="navbar__box"
-        onClick={e => handleClick(e, `community`)}
-      >
+    <div className={styles.navbar}>
+      <Link to="rank" className={styles.navbarContainer}>
         <img
-          className="navbar__box__button"
-          src="community.png"
+          id="rank"
+          className={styles.navbarButton}
+          src={rankImg.current}
+          alt="랭킹"
+        />
+        <span className={styles.navbarText}>랭킹</span>
+      </Link>
+
+      <Link to="insight" className={styles.navbarContainer}>
+        <img
+          id="insight"
+          className={styles.navbarButton}
+          src={insightImg.current}
+          alt="통계"
+        />
+        <span className={styles.navbarText}>통계</span>
+      </Link>
+      <Link to="/" className={styles.navbarContainer}>
+        <img
+          id="home"
+          className={styles.navbarButton}
+          src={homeImg.current}
+          alt="홈"
+        />
+        <span className={styles.navbarText}>홈</span>
+      </Link>
+      <Link to="community" className={styles.navbarContainer}>
+        <img
+          id="community"
+          className={styles.navbarButton}
+          src={communityImg.current}
           alt="커뮤니티"
         />
-        <span className="navbar__box__text">커뮤니티</span>
-      </a>
-      <a
-        href="rank"
-        className="navbar__box"
-        onClick={e => handleClick(e, `rank`)}
-      >
-        <img className="navbar__box__button" src="rank.png" alt="랭킹" />
-        <span className="navbar__box__text">랭킹</span>
-      </a>
+        <span className={styles.navbarText}>커뮤니티</span>
+      </Link>
+      <Link to="mypage" className={styles.navbarContainer}>
+        <img
+          id="mypage"
+          className={styles.navbarButton}
+          src={myPageImg.current}
+          alt="마이"
+        />
+        <span className={styles.navbarText}>마이</span>
+      </Link>
     </div>
   );
 };

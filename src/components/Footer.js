@@ -1,20 +1,25 @@
 import React from 'react';
-import './Footer.css';
+import styles from './Footer.module.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className={styles.footer}>
       <span>© 2024 GDG ALL RIGHTS RESERVED</span>
-      <a href="https://www.likelionync.shop" className="underline">
+      <Link to="/" className="underline">
         개인정보처리방침
-      </a>
-      <a href="https://www.likelionync.shop" className="underline">
+      </Link>
+      <Link to="/" className="underline">
         이용약관
-      </a>
+      </Link>
       <span>FE : 오용준 홍가영</span>
-      <span>BE : 김도훈 한상희 노기봉</span>
-      <div className="footer__contacts">
-        <a href="https://www.instagram.com/likelion_ync/">
+      <span>BE : 김도훈 한상희 노기봉 정희수</span>
+      <div className={styles.footerContacts}>
+        <a
+          href="https://www.instagram.com/likelion_ync/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <svg
             width="30"
             height="30"
@@ -28,7 +33,7 @@ const Footer = () => {
             />
           </svg>
         </a>
-        <a href="https://github.com/TEAM-GDG">
+        <a href="https://github.com/TEAM-GDG" target="_blank" rel="noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

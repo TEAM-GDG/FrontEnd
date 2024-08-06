@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: calc(env(safe-area-inset-bottom) + 0px);
+    box-sizing: border-box;
+    z-index: 1000;
+    max-width: 600px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    font-family: '나눔스퀘어', 'sans-serif';
+}
+
+.navbarContainer {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 60px;
+    width: 20%;
+}
+
+.navbarButton {
+    height: 26px;
+    width: 26px;
+}
+
+.navbarText {
+    font-size: 12px;
+    margin-top: 5%;
+    color: white;
+
+    @media (max-width: 520px) {
+        font-size: 10px;
+    }
+    @media (max-width: 440px) {
+        font-size: 10px;
+    }
+    @media (max-width: 350px) {
+        font-size: 8px;
+    }
+}

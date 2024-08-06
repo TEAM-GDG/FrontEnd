@@ -1,19 +1,92 @@
 .App {
   width: 100%;
   height: 100%;
-  background-image: url('../public/paperbg.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #F2F2F2;
 }
 
 .container {
-  font-family: NanumBarunpen;
+  font-family: '나눔스퀘어', 'sans-serif';
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  /* Default */
+  min-height: 550px;
+
+  @media screen and (min-height: 668px) {
+    min-height: 590px;
+  }
+
+  /* Samsung Galaxy S8+ */
+  @media screen and (min-height: 740px) {
+    min-height: 630px;
+  }
+
+  /* iPhone 12 Pro */
+  @media screen and (min-height: 844px) {
+    min-height: 730px;
+  }
+
+  /* Galaxy Z Fold 5 */
+  @media screen and (min-height: 882px) {
+    min-height: 780px;
+  }
+
+  /* iPhone XR */
+  @media screen and (min-height: 896px) {
+    min-height: 790px;
+  }
+
+  /* Samsung Galaxy A51/ A71 / S20 Ultra */
+  @media screen and (min-height: 914px) {
+    min-height: 810px;
+  }
+
+  /* iPhone 14 Pro Max */
+  @media screen and (min-height: 932px) {
+    min-height: 820px;
+  }
+
+  /* iPad Mini */
+  @media screen and (min-height: 1024px) {
+    min-height: 910px;
+  }
+
+  /* iPad Air */
+  @media screen and (min-height: 1180px) {
+    min-height: 1070px;
+  }
+
+  /* Asus Zenbook Fold */
+  @media screen and (min-height: 1280px) {
+    min-height: 1170px;
+  }
+
+  /* iPad Pro, Surface Pro 7 */
+  @media screen and (min-height: 1366px) {
+    min-height: 1270px;
+  }
+
+  @media screen and (min-height: 1440px) {
+    min-height: 1370px;
+  }
 }
 
 .underline {
   text-decoration: underline;
+}
+
+.horizon {
+  width: 100%;
+  border-bottom: 1px solid #bbbbbb;
+  margin-bottom: 5%;
+}
+
+.m-l-15 {
+  margin-left: 15%;
+}
+
+.m-b-30 {
+  margin-bottom: 30%;
 }
