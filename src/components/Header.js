@@ -24,7 +24,7 @@ const Header = ({ location }) => {
       <div className={styles.headerTitleContainer}>
         <Link to="/">
           <img
-            src="/img/logo.png"
+            src="/img/logo1.png"
             alt="logo"
             className={styles.headerTitleImg}
           />

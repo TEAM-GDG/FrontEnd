@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .rankTopInfoContainer {
@@ -68,7 +68,7 @@
   margin: 0 2% 0 2%;
   height: 40px;
   width: 25%;
-  border-radius: 5px;
+  border-radius: 40px;
   background: #e2e5e2;
   font-size: 18px;
   font-family: '나눔스퀘어볼드', 'sans-serif';

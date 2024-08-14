@@ -14,29 +14,29 @@ const MainPage = () => {
           className={styles.link}
         >
           <img
-            src="/img/profile.png"
+            src="/img/profile1.png"
             className={styles.profileImage}
-            alt="프로필사진"
+            alt="프사"
           />
           <div
             className={styles.nickname}
-            style={
-              isLogin
-                ? { color: `black` }
-                : { color: `blue`, textDecoration: `underline` }
-            }
+            // style={
+            //   isLogin
+            //     ? { color: `black` }
+            //     : { color: `blue`, textDecoration: `underline` }
+            // }
           >
-            로그인이 필요합니다
+            잠많은아기사자
           </div>
         </Link>
         <div className={styles.recordTimeText}>
-          감정 기록 <span className={styles.recordTimeTextDate}>486</span>일째
+          감정 기록 <span className={styles.recordTimeTextDate}>12</span>일째
         </div>
       </div>
       <div className={styles.emotionContainer}>
         <div className={styles.heart}>
           <span className={styles.heartInText}>감정표현</span>
-          <span className={styles.heartInTextPercent}>100%</span>
+          <span className={styles.heartInTextPercent}>58%</span>
         </div>
         <Link to="status/record" className={styles.emotionTextContainer}>
           <span className={styles.emotionText}>

@@ -19,13 +19,13 @@
 }
 
 .writeContent {
-  margin: 2% 0 0 0;
+  margin: 5% 0 0 0;
   width: 100%;
   height: 300px;
   border: none;
   resize: none;
   background: none;
-  font-size: 25px;
+  font-size: 18px;
   font-family: '나눔스퀘어라이트', 'sans-serif';
 }
 

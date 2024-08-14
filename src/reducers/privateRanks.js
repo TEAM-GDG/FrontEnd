@@ -57,7 +57,7 @@ const rank = [
   },
   {
     rank: 10,
-    name: '움',
+    name: '치이카와이',
     score: 300,
     chain: 6,
   },
